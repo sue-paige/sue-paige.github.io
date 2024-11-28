@@ -44,5 +44,6 @@ Reach out via email for detailed information on my past projects (including my r
 - [x.com (Twitter)](https://x.com/sue_do_paige)
 - [My Haskell Projects Website](https://www.someodd.zip), which includes links and contact info pertaining to my Haskell development experience
 - [Email](mailto:sue.paige@pm.me)
+- WeChat: please contact me to get my WeChat!
 
 The domain name `sue.do` is a play on the `sudo` command in Linux.
