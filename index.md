@@ -41,8 +41,8 @@ Reach out via email for detailed information on my past projects (including my r
 ## Connect with Me
 
 - [LinkedIn](https://www.linkedin.com/in/sue-paige/)
-- X.com
+- [x.com (Twitter)](https://x.com/sue_do_paige)
 - [My Haskell Projects Website](https://www.someodd.zip), which includes links and contact info pertaining to my Haskell development experience
-- sue.paige@pm.me
+- [Email](mailto:sue.paige@pm.me)
 
 The domain name `sue.do` is a play on the `sudo` command in Linux.
