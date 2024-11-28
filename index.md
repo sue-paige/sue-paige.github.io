@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Sue Paige (suedo)
+title: Sue Paige (sue.do)
 ---
 
 # Sue Paige
