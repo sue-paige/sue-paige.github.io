@@ -15,7 +15,7 @@ Combining state-of-the-art technical innovation with global business strategy. D
 
 Experienced business leader and technical innovator with 15+ years of experience. **Currently:**
 
-- CEO of **China-West Consulting**, helping business professionals and academics understand Chinese culture and markets.
+- CEO of [China-West Consulting](https://chinawest.consulting), helping business professionals and academics understand Chinese culture and markets.
 - Chief Technical Officer at **Mood Ring Studios**, accountable for monetization strategies, technical leadership, and Haskell/Python software development.
 
 Reach out via email for detailed information on my past projects (including my resume), or if you want to utilize my experience: [sue.paige@pm.me](mailto:sue.paige@pm.me).
