@@ -23,8 +23,9 @@ Reach out via email for detailed information on my past projects (including my r
 ## Projects and Contributions
 
 - **[China-West Consulting](https://chinawest.consulting)**
-  - Advising Fortune 500 companies on successful market entries into China.
-  - Delivered workshops on Chinese cultural trends to academic institutions.
+  - Advising companies on successful market entries into China.
+  - Delivered workshops on Chinese cultural trends.
+  - Worked with museum to provide logistics and Chinese services for a documentary
 
 - **Mood Ring Studios**
   - Built a Haskell-based monetization engine, increasing revenue by 30%.
