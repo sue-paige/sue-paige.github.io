@@ -40,10 +40,11 @@ Reach out via email for detailed information on my past projects (including my r
 
 ## Connect with Me
 
+- [Instagram](https://www.instagram.com/gildedpaige/): I share a lot of my interviews, participation in cultural events, etc.
 - [LinkedIn](https://www.linkedin.com/in/sue-paige/) -- currently dead due to a problem with LinkedIn
 - [x.com (Twitter)](https://x.com/sue_do_paige)
 - [My Haskell Projects Website](https://www.someodd.zip), which includes links and contact info pertaining to my Haskell development experience
 - [Email](mailto:sue.paige@pm.me)
-- WeChat: please contact me to get my WeChat!
+- WeChat and Xiaohongshu: please contact me for my 微信 (WeChat) and 小红书 (Redbook)!
 
 The domain name `sue.do` is a play on the `sudo` command in Linux.
