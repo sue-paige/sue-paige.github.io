@@ -594,3 +594,69 @@ main > *:hover {
   }
 }
 
+/* Fix 1: Add this to your CSS to contain the 3D effects */
+body {
+  overflow-x: hidden;
+  min-height: 100vh;
+  position: relative;
+  /* Force content to stay within viewport */
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  width: 100%;
+}
+
+main {
+  flex: 1;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+footer {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+/* Fix 2: Contain 3D transformed elements */
+.particles {
+  overflow: hidden;
+  pointer-events: none;
+}
+
+/* Fix 3: Ensure transforms don't create extra space */
+main > * {
+  transform-style: preserve-3d;
+  /* Add this to ensure transforms don't affect document flow */
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+/* Fix 4: Set positioning for grid animation to prevent overflow */
+body::after {
+  overflow: hidden;
+  pointer-events: none;
+}
+
+/* Fix 5: Alternative approach - if the above doesn't work */
+html, body {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+footer {
+  flex-shrink: 0;
+}
