@@ -22,7 +22,7 @@ Reach out via email for detailed information on my past projects (including my r
 
 ## Projects and Contributions
 
-- **China-West Consulting**
+- **[China-West Consulting](https://chinawest.consulting)**
   - Advising Fortune 500 companies on successful market entries into China.
   - Delivered workshops on Chinese cultural trends to academic institutions.
 
@@ -33,10 +33,12 @@ Reach out via email for detailed information on my past projects (including my r
 - **Columbia University**
   - Led the monetization strategy for a university research project, transitioning to a profitable venture.
   - Engineering/technical lead of a small team.
-- **Haskell Contributions**
+
+- **15+ years of Software Endeavors**
+  - Extensive experience in software development and technical leadership, spanning startups, academia, and enterprise projects.
   - My [Haskell GitHub](https://github.com/someodd) demonstrates 6+ years of Haskell expertise, including formal verification of custom algorithms, contributing to both research and practical implementations.
+  - Older open source body of work Lots of Python) available upon request.
   - Contributor to open-source projects like Nix.
-- **15+ years of Software Endeavors**: Extensive experience in software development and technical leadership, spanning startups, academia, and enterprise projects.
 
 ## Connect with Me
 
