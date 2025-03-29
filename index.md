@@ -23,25 +23,31 @@ Experienced business leader and technical innovator with 15+ years of experience
 
 Reach out via email for detailed information on my past projects (including my resume), or if you want to utilize my experience: [sue.paige@pm.me](mailto:sue.paige@pm.me).
 
-## Highlights/Achievements
+## Recent Highlights/Achievements
 
-- **[China-West Consulting](https://chinawest.consulting)**
+You can email me for more details and possibly for my resume.
+
+- **[China-West Consulting](https://chinawest.consulting)** (CEO)
   - Advising companies on successful market entries into China.
+  - Featured in Chinese news
   - Delivered workshops on Chinese cultural trends.
   - Worked with museum to provide logistics and Chinese services for a documentary
 
-- **Mood Ring Studios**
-  - Built a Haskell-based monetization engine, increasing revenue by 30%.
-  - Directed the creation of Python microservices for scalable systems.
+- **Mood Ring Studios** (Chief Technology Officer)
+  - Used Haskell to optimize & verify mission-critical components using profiling, LiquidHaskell, and Isabelle proof assistant.
+  - AI with haskell-ollama and Python.
+  - Cybersecurity: responsible for on-site server and sensitive information security.
 
-- **Columbia University**
-  - Led the monetization strategy for a university research project, transitioning to a profitable venture.
-  - Engineering/technical lead of a small team.
+- **Columbia University** (Technology Consultant)
+  - Monetization strategy for a University research project, transitioning to a profitable venture.
+  - Oversaw a team of developers to deliver a product.
+  - Drastically reduced development time costs for a team of engineers through DevOps strategies
 
 - **15+ years of Software Endeavors**
   - Extensive experience in software development and technical leadership, spanning startups, academia, and enterprise projects.
   - My [Haskell GitHub](https://github.com/someodd) demonstrates 6+ years of Haskell expertise, including formal verification of custom algorithms, contributing to both research and practical implementations.
-  - Older open source body of work Lots of Python) available upon request.
+  - Older open source body of work available upon request.
+  - Delivered technical talks, including a public conference.
   - Contributor to open-source projects like Nix.
 
 The domain name `sue.do` is a play on the `sudo` command in Linux.
