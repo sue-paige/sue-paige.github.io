@@ -12,7 +12,7 @@ Whatever I *do* I go hard. Gym six days a week. Practicing Mandarin daily. Obses
 - [x.com (Twitter)](https://x.com/sue_do_paige)
 - [My Haskell Projects Website](https://www.someodd.zip), which includes links and contact info pertaining to my Haskell development experience
 - [Email](mailto:sue.paige@pm.me)
-- WeChat and Xiaohongshu: please contact me for my 微信 (WeChat) and 小红书 (Redbook)!
+- **WeChat and Xiaohongshu**: please contact me for my 微信 (WeChat) and 小红书 (Redbook)!
 
 ## About Me
 
