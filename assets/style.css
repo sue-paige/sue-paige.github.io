@@ -1,4 +1,36 @@
-#connect-with-me + ul li:last-child > :first-child {
+/* Style for strong elements in list items */
+li strong {
+  font-family: var(--font-sans);
+  font-size: 1.1rem;
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--color-text);
+}/* Styling for Highlights/Achievements section */
+#highlightsachievements {
+  position: relative;
+  padding-left: calc(var(--baseline) / 2);
+  margin-top: calc(var(--baseline) * 3);
+}
+
+#highlightsachievements::before {
+  content: "";
+  position: absolute;
+  left: -0.25rem;
+  top: 0;
+  bottom: 0;
+  width: 0.25rem;
+  background-color: var(--color-accent);
+  opacity: 0.2;
+}/* Additional header/intro styling */
+header + main > p:first-of-type {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin: calc(var(--baseline) * 1.5) 0 calc(var(--baseline) * 2);
+  text-align: center;
+  max-width: 36rem;
+  margin-left: auto;
+  margin-right: auto;
+}#connect-with-me + ul li:last-child > :first-child {
   font-family: var(--font-sans);
   font-weight: 600;
   font-size: 1.1rem;
@@ -63,7 +95,7 @@ body {
   font-size: var(--text-base-size);
   line-height: var(--line-height);
   padding: 2rem 1rem;
-  max-width: var(--max-width);
+  max-width: 100%;
   margin: 0 auto;
   text-rendering: optimizeLegibility;
 }
@@ -87,6 +119,9 @@ header h1 {
 /* Main content styles */
 main {
   margin-bottom: calc(var(--baseline) * 2);
+  max-width: 38rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 main h1 {
