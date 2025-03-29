@@ -354,13 +354,13 @@ li ul, li ol {
 }
 
 /* About Me and Projects sections */
-#about-me, #projects-and-contributions {
+h2 {
   position: relative;
   padding-left: calc(var(--baseline) / 2);
   margin-top: calc(var(--baseline) * 3);
 }
 
-#about-me::before, #projects-and-contributions::before {
+h2::before, #projects-and-contributions::before {
   content: "";
   position: absolute;
   left: -0.25rem;
