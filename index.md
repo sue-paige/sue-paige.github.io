@@ -3,7 +3,7 @@ layout: default
 title: Sue Paige (sue.do)
 ---
 
-Whatever I *do* I go hard. Gym six days a week. Practicing Mandarin daily. Obsessively delivering tech products. Volunteer work. Building businesses. Partying hard.
+What do I do? I do it all. And I do it hard. Gym. Mandarin. Tech. Community. Business. Party.
 
 ## Connect with Me
 
