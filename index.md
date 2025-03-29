@@ -10,7 +10,7 @@ Whatever I *do* I go hard. Gym six days a week. Practicing Mandarin daily. Obses
 - [Instagram](https://www.instagram.com/gildedpaige/) Interviews, events, personal life.
 - [LinkedIn](https://www.linkedin.com/in/sue-paige/) Currently dead due to a problem with LinkedIn
 - [x.com (Twitter)](https://x.com/sue_do_paige) A bit inactive at-the-moment.
-- [My Haskell Projects Website](https://www.someodd.zip) Center for my nerdier side; Haskell, code, technology!
+- [My Technology Website](https://www.someodd.zip) Center for my nerdier side; Haskell, code, technology!
 - [Email](mailto:sue.paige@pm.me) Reach out!
 - **WeChat and Xiaohongshu** Please contact me for my 微信 (WeChat) and 小红书 (Redbook)!
 
