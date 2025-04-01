@@ -483,3 +483,82 @@ footer {
   pointer-events: none;
   z-index: 1000;
 }
+
+
+
+/* Enhanced typography for h3 and h4 elements */
+
+h3 {
+  /* Font properties */
+  font-family: var(--font-sans);
+  font-size: 1.3125rem; /* 21px at 16px base - follows a modular scale */
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  
+  /* Spacing for vertical rhythm */
+  margin-top: calc(var(--baseline) * 1.5);
+  margin-bottom: var(--baseline);
+  
+  /* Visual style */
+  color: var(--color-text);
+  position: relative;
+  padding-left: calc(var(--baseline) / 2);
+}
+
+/* Left border accent for h3 similar to h2 but more subtle */
+h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.25em; /* Align with text rather than entire element */
+  bottom: 0.25em;
+  width: 3px;
+  background-color: var(--color-accent);
+  opacity: 0.15;
+  border-radius: 1px;
+}
+
+h4 {
+  /* Font properties */
+  font-family: var(--font-sans);
+  font-size: 1.125rem; /* 18px at 16px base */
+  font-weight: 600;
+  line-height: var(--baseline);
+  
+  /* Spacing for vertical rhythm */
+  margin-top: var(--baseline);
+  margin-bottom: calc(var(--baseline) / 2);
+  
+  /* Visual style */
+  color: var(--color-text);
+  display: inline-block;
+  position: relative;
+}
+
+/* Subtle underline for h4 */
+h4::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 2em; /* Fixed width underline for visual interest */
+  height: 1px;
+  background-color: var(--color-accent);
+  opacity: 0.2;
+}
+
+/* Add padding to any element following an h3 or h4 for better visual hierarchy */
+h3 + p, h3 + ul, h3 + ol,
+h4 + p, h4 + ul, h4 + ol {
+  padding-left: calc(var(--baseline) / 2);
+}
+
+/* Improve spacing when h4 follows h3 */
+h3 + h4 {
+  margin-top: calc(var(--baseline) / 2);
+}
+
+/* Ensure proper spacing when h3 follows h2 */
+h2 + h3 {
+  margin-top: var(--baseline);
+}
