@@ -98,7 +98,7 @@ You can listen below, or [go to the Whisper Radio stream directly](https://radio
 * Parallelism and concurrency
 * Implementation of client side of [RFC 1436](https://www.rfc-editor.org/rfc/rfc1436)
 
-![Waffle](/assets/portfolio/waffle-playing-hack-game.gif)
+![Waffle](/assets/portfolio/waffle-playing-hacking-game.gif)
 
 ### Other + older experience
 
