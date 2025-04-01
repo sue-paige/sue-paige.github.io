@@ -48,17 +48,39 @@ You can email me for more details and possibly for my resume.
 - Oversaw a team of developers to deliver a product.
 - Drastically reduced development time costs for a team of engineers through DevOps strategies
 
-### Open Source, Services
-
-- My [Haskell GitHub](https://github.com/someodd) demonstrates 6+ years of Haskell expertise, including formal verification of custom algorithms, contributing to both research and practical implementations.
-- I also have a [website for my technical body of work](https://www.someodd.zip)
-- Operating public services in-house, like forum, IRC, XMPP, Counter-Strike 1.6, and more.
-- [Whisper Radio](https://radio.someodd.zip/stream): radio show hosted by AI and Bash scripts ([open source](https://github.com/someodd/whisper-radio)).
-- Contributor to open-source projects like Nix.
-
 ### Volunteer work
 
 - Working on a documentary for [The Museum of Art and Digital Entertainment](https://themade.org)
+- Member of [Bitreich](https://bitreich.org)
+
+### Open Source, Services
+
+High level:
+
+- My [Haskell GitHub](https://github.com/someodd) demonstrates 6+ years of Haskell expertise, including formal verification of custom algorithms, contributing to both research and practical implementations.
+- I also have a [website for my technical body of work](https://www.someodd.zip)
+- Operating public services in-house, like radio, forum, IRC, XMPP, Counter-Strike 1.6, and more.
+- Contributor to open-source projects like Nix.
+
+#### Whisper Radio
+
+[Whisper Radio](https://radio.someodd.zip/stream) is a radio show hosted by AI and Bash scripts. It is ([open source](https://github.com/someodd/whisper-radio)).
+
+The radio program has these features (and more!):
+
+* AI responds to people's posts on [Mastodon](https://mastodon.org)
+* Selects music to play
+* Radio announcer (using both old school TTS *and* AI-based TTS)
+* Weather report
+* Reads the latest thread in my Gopher forum [phorum](https://codemadness.org/gopherproxy/?q=gopher.someodd.zip%2F1%2Fphorum)
+* Talking/reading segments, like promoting people's projects, or reading poetry, interesting bits of history
+
+You can listen below, or [go to the Whisper Radio stream directly](https://radio.someodd.zip).
+
+<audio controls>
+    <source src="https://radio.someodd.zip/stream" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
 
 ### Other + older experience
 
