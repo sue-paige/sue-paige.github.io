@@ -622,3 +622,50 @@ footer {
   pointer-events: none;
   z-index: 1000;
 }
+
+/* Responsive image styling */
+img {
+  max-width: 100%; /* Ensures image doesn't exceed container width */
+  height: auto; /* Maintains aspect ratio */
+  display: block; /* Removes bottom margin/spacing that can occur with inline images */
+  margin: 1.5rem 0; /* Adds some vertical spacing that aligns with typography */
+}
+
+/* For images that need special treatment, like the Waffle GIF */
+main img {
+  border-radius: 4px; /* Optional: adds slight rounding to images */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Optional: adds subtle shadow */
+}
+
+/* Ensure images in articles/sections align with text width */
+main p img,
+main li img,
+main h2 + img,
+main h3 + img,
+main h4 + img {
+  max-width: 100%;
+  width: auto;
+}
+
+/* If you want a specific max-width for images that matches content width */
+@media (min-width: 768px) {
+  main img {
+    max-width: min(100%, 700px); /* Adjust 700px to match your content width */
+  }
+}
+
+/* If you want images to maintain specific aspect ratios related to your line height */
+main img[src$=".gif"],
+main img[src*="portfolio"] {
+  /* This maintains aspect ratio while ensuring height is divisible by your line height */
+  /* Assuming a base line height of 1.5rem (24px at 16px base font) */
+  object-fit: cover;
+  height: auto;
+}
+
+/* Audio controls responsive styling to match image constraints */
+audio {
+  width: 100%;
+  max-width: 100%;
+  margin: 1.5rem 0;
+}
