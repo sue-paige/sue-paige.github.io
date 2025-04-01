@@ -55,12 +55,18 @@ You can email me for more details and possibly for my resume.
 
 ### Open Source, Services
 
-High level:
-
 - My [Haskell GitHub](https://github.com/someodd) demonstrates 6+ years of Haskell expertise, including formal verification of custom algorithms, contributing to both research and practical implementations.
 - I also have a [website for my technical body of work](https://www.someodd.zip)
 - Operating public services in-house, like radio, forum, IRC, XMPP, Counter-Strike 1.6, and more.
 - Contributor to open-source projects like Nix.
+
+#### Bore
+
+Bore is like [Jekyll](https://jekyllrb.com/), a static website builder, except it's for the [Gopher Protocol](https://en.wikipedia.org/wiki/Gopher_(protocol)). Some of the highlights:
+
+* Formal verification using [LiquidHaskell] for the custom search algorithm
+* Property-based testing using [QuickCheck] for the custom search algorithm
+* Blogging system, with Atom/RSS, tagging, indexing
 
 #### Whisper Radio
 
