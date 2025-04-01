@@ -68,6 +68,8 @@ Bore is like [Jekyll](https://jekyllrb.com/), a static website builder, except i
 * Property-based testing using [QuickCheck] for the custom search algorithm
 * Blogging system, with Atom/RSS, tagging, indexing
 
+Also, check out [my technical website's phlog-mirror](https://www.someodd.zip/phlog-mirror/), which gets built by Bore's command to archive to Jekyll!
+
 #### Whisper Radio
 
 [Whisper Radio](https://radio.someodd.zip/stream) is a radio show hosted by AI and Bash scripts. It is ([open source](https://github.com/someodd/whisper-radio)).
@@ -87,6 +89,16 @@ You can listen below, or [go to the Whisper Radio stream directly](https://radio
     <source src="https://radio.someodd.zip/stream" type="audio/mpeg">
     Your browser does not support the audio element.
 </audio>
+
+### Waffle
+
+[Waffle](https://github.com/someodd/waffle) is like a web browser, but for the Gopher Protocol. I wrote about the experience extensively in [my article showcasing Waffle on my tech website](https://www.someodd.zip/showcase/waffle/), which includes:
+
+* Extensive use of performance profiling
+* Parallelism and concurrency
+* Implementation of client side of [RFC 1436](https://www.rfc-editor.org/rfc/rfc1436)
+
+![Waffle](/assets/portfolio-images/waffle-playing-hack-game.gif)
 
 ### Other + older experience
 
