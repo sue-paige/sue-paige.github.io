@@ -29,12 +29,15 @@ Reach out via email for detailed information on my past projects (including my r
 
 You can email me for more details and possibly for my resume.
 
+Here are some highlights that don't have their own section:
+
 ### China-West Consulting (CEO)
 
 - Advising companies on successful market entries into China.
-- Featured in Chinese news
+- I appeared in Chinese news (Sing Tao Daily)
 - Delivered workshops on Chinese cultural trends.
 - Worked with museum to provide logistics and Chinese services for a documentary
+- Event organizing with Chinatown community and avid financial supporter
 
 ### Mood Ring Studios (CTO)
 
@@ -55,6 +58,8 @@ You can email me for more details and possibly for my resume.
 
 ### Open Source, Services
 
+Here are just a few of my projects. Here's some other highlights:
+
 - My [Haskell GitHub](https://github.com/someodd) demonstrates 6+ years of Haskell expertise, including formal verification of custom algorithms, contributing to both research and practical implementations.
 - I also have a [website for my technical body of work](https://www.someodd.zip)
 - Operating public services in-house, like radio, forum, IRC, XMPP, Counter-Strike 1.6, and more.
@@ -64,11 +69,21 @@ You can email me for more details and possibly for my resume.
 
 Bore is like [Jekyll](https://jekyllrb.com/), a static website builder, except it's for the [Gopher Protocol](https://en.wikipedia.org/wiki/Gopher_(protocol)). Some of the highlights:
 
-* Formal verification using [LiquidHaskell] for the custom search algorithm
-* Property-based testing using [QuickCheck] for the custom search algorithm
+* Formal verification using [LiquidHaskell](https://ucsd-progsys.github.io/liquidhaskell/) for the custom search algorithm
+* Property-based testing using [QuickCheck](https://en.wikipedia.org/wiki/QuickCheck) for the custom search algorithm
 * Blogging system, with Atom/RSS, tagging, indexing
 
-Also, check out [my technical website's phlog-mirror](https://www.someodd.zip/phlog-mirror/), which gets built by Bore's command to archive to Jekyll!
+Some examples:
+
+  * [My technical website's phlog-mirror](https://www.someodd.zip/phlog-mirror/) gets built by Bore's command to archive to Jekyll!
+  * [View the gopherhole built by Bore using an HTTP proxy](https://codemadness.org/gopherproxy/?q=gopher.someodd.zip%2F)
+
+#### haskellcard
+
+[haskellcard](https://github.com/someodd/haskellcard) is a game engine built in Haskell, that is similar to [HyperCard](https://en.wikipedia.org/wiki/HyperCard).
+
+  * Nix packages setup for building and development
+  * Game state and level format is the same thing and perfectly deterministic
 
 #### Whisper Radio
 
