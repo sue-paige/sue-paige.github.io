@@ -80,7 +80,7 @@ A preview of the services I host ([many services outlined on my tech website](ht
 
 Bore is like [Jekyll](https://jekyllrb.com/), a static website builder, except it's for the [Gopher Protocol](https://en.wikipedia.org/wiki/Gopher_(protocol)). Some of the highlights:
 
-* Formal verification using [LiquidHaskell](https://ucsd-progsys.github.io/liquidhaskell/) for the custom search algorithm
+* Formal verification using [LiquidHaskell](https://ucsd-progsys.github.io/liquidhaskell/) for the custom search algorithm, through my [ryvm (Rank You Very Much)](https://github.com/someodd/ryvm) software
 * Property-based testing using [QuickCheck](https://en.wikipedia.org/wiki/QuickCheck) for the custom search algorithm
 * Blogging system, with Atom/RSS, tagging, indexing
 
