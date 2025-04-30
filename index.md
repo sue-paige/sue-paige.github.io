@@ -34,9 +34,9 @@ Here are some highlights that don't have their own section:
 ### China-West Consulting (CEO)
 
 - Advising companies on successful market entries into China.
-- I appeared in Chinese news (Sing Tao Daily)
+- I appeared in Chinese news ([Sing Tao Daily](https://www.singtaousa.com/))
 - Delivered workshops on Chinese cultural trends.
-- Worked with museum to provide logistics and Chinese services for a documentary
+- Working with a museum ([The MADE](https://themade.org/)) to provide logistics and Chinese services for a documentary
 - Event organizing with Chinatown community and avid financial supporter, especially with the San Francisco Chinese Opera scene, working with [Jing Ying Cantonese Opera Institute](https://www.jingyingcantoneseopera.org/)
 
 ### Mood Ring Studios (CTO)
@@ -67,9 +67,9 @@ Here are just a few of my projects. Here's some other highlights:
 
 #### Self-hosting extraordinaire
 
-A preview of the services I host ([many services outlined on my tech website](https://someodd.zip)):
+A preview of the services I host ([many services outlined on my tech website](https://someodd.zip)) on my own server, in my home:
 
-* [web radio](https://radio.someodd.zip/)
+* [web radio](https://radio.someodd.zip/) running my [Whisper Radio](https://github.com/someodd/whisper-radio/) software! AI/automated Internet radio station!
 * [Gopher Protocol server](https://codemadness.org/gopherproxy/?q=gopher.someodd.zip/) -- this acts as a single point of truth, the most up-to-date source of all my tech stuff. Built and served using [my bore software](https://github.com/someodd/bore)! Has features like "ChatGopherPT" which allows you to use an LLM/AI via the Gopher Protocol!
 * [Counter-Strike 1.6 server](https://codemadness.org/gopherproxy/?q=gopher.someodd.zip/0/services/counter-strike.md) for old school gaming! I even have [my own Mumble server](https://codemadness.org/gopherproxy/?q=gopher.someodd.zip/0/services/mumble.md)! Weekly event every Saturday!
 * [phorum](https://codemadness.org/gopherproxy/?q=gopher.someodd.zip/1/phorum): Gopher Protocol forum!
