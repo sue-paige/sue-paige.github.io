@@ -8,7 +8,7 @@ What do I do? I do it all. And I do it hard. Gym. Mandarin. Tech. Community. Bus
 ## Connect with Me
 
 - [Instagram](https://www.instagram.com/gildedpaige/) Interviews, events, personal life.
-- [LinkedIn](https://www.linkedin.com/in/sue-paige/) Currently dead due to a problem with LinkedIn
+- [LinkedIn](https://www.linkedin.com/in/someodd/) Professional life!
 - [x.com (Twitter)](https://x.com/sue_do_paige) A bit inactive at-the-moment.
 - [My Technology Website](https://www.someodd.zip) Center for my nerdier side; Haskell, code, technology!
 - [Email](mailto:sue.paige@pm.me) Reach out!
@@ -27,7 +27,7 @@ Reach out via email for detailed information on my past projects (including my r
 
 ## Recent Highlights/Achievements
 
-You can email me for more details and possibly for my resume.
+You can email me for more details and possibly for my resume. I also have an older body of open source work available upon request. For more work history you can also see [my LinkedIn](https://linkedin/in/someodd/)!
 
 Here are some highlights that don't have their own section:
 
@@ -37,7 +37,7 @@ Here are some highlights that don't have their own section:
 - I appeared in Chinese news (Sing Tao Daily)
 - Delivered workshops on Chinese cultural trends.
 - Worked with museum to provide logistics and Chinese services for a documentary
-- Event organizing with Chinatown community and avid financial supporter
+- Event organizing with Chinatown community and avid financial supporter, especially with the San Francisco Chinese Opera scene, working with [Jing Ying Cantonese Opera Institute](https://www.jingyingcantoneseopera.org/)
 
 ### Mood Ring Studios (CTO)
 
@@ -64,6 +64,17 @@ Here are just a few of my projects. Here's some other highlights:
 - I also have a [website for my technical body of work](https://www.someodd.zip)
 - Operating public services in-house, like radio, forum, IRC, XMPP, Counter-Strike 1.6, and more.
 - Contributor to open-source projects like Nix.
+
+#### Self-hosting extraordinaire
+
+A preview of the services I host ([many services outlined on my tech website](https://someodd.zip)):
+
+* [web radio](https://radio.someodd.zip/)
+* [Gopher Protocol server](https://codemadness.org/gopherproxy/?q=gopher.someodd.zip/) -- this acts as a single point of truth, the most up-to-date source of all my tech stuff. Built and served using [my bore software](https://github.com/someodd/bore)
+* [Counter-Strike 1.6 server](https://codemadness.org/gopherproxy/?q=gopher.someodd.zip/0/services/counter-strike.md) for old school gaming! I even have [my own Mumble server](https://codemadness.org/gopherproxy/?q=gopher.someodd.zip/0/services/mumble.md)! Weekly event every Saturday!
+* [phorum](https://codemadness.org/gopherproxy/?q=gopher.someodd.zip/1/phorum): Gopher Protocol forum!
+* [I host my own XMPP](https://codemadness.org/gopherproxy/?q=gopher.someodd.zip/0/services/xmpp.md), you can contact me via `someodd@xmpp.someodd.zip`!
+* [IRC server](https://codemadness.org/gopherproxy/?q=gopher.someodd.zip/0/services/irc.md): you can actually join this through my XMPP server! Actually surprisingly active with some amazing people!
 
 #### Bore
 
@@ -105,7 +116,7 @@ You can listen below, or [go to the Whisper Radio stream directly](https://radio
     Your browser does not support the audio element.
 </audio>
 
-### Waffle
+#### Waffle
 
 [Waffle](https://github.com/someodd/waffle) is like a web browser, but for the Gopher Protocol. I wrote about the experience extensively in [my article showcasing Waffle on my tech website](https://www.someodd.zip/showcase/waffle/), which includes:
 
@@ -114,9 +125,5 @@ You can listen below, or [go to the Whisper Radio stream directly](https://radio
 * Implementation of client side of [RFC 1436](https://www.rfc-editor.org/rfc/rfc1436)
 
 ![Waffle](/assets/portfolio/waffle-playing-hacking-game.gif)
-
-### Other + older experience
-
-Older open source and professional body of work available upon request.
 
 The domain name `sue.do` is a play on the `sudo` command in Linux.
