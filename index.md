@@ -70,7 +70,7 @@ Here are just a few of my projects. Here's some other highlights:
 A preview of the services I host ([many services outlined on my tech website](https://someodd.zip)):
 
 * [web radio](https://radio.someodd.zip/)
-* [Gopher Protocol server](https://codemadness.org/gopherproxy/?q=gopher.someodd.zip/) -- this acts as a single point of truth, the most up-to-date source of all my tech stuff. Built and served using [my bore software](https://github.com/someodd/bore)
+* [Gopher Protocol server](https://codemadness.org/gopherproxy/?q=gopher.someodd.zip/) -- this acts as a single point of truth, the most up-to-date source of all my tech stuff. Built and served using [my bore software](https://github.com/someodd/bore)! Has features like "ChatGopherPT" which allows you to use an LLM/AI via the Gopher Protocol!
 * [Counter-Strike 1.6 server](https://codemadness.org/gopherproxy/?q=gopher.someodd.zip/0/services/counter-strike.md) for old school gaming! I even have [my own Mumble server](https://codemadness.org/gopherproxy/?q=gopher.someodd.zip/0/services/mumble.md)! Weekly event every Saturday!
 * [phorum](https://codemadness.org/gopherproxy/?q=gopher.someodd.zip/1/phorum): Gopher Protocol forum!
 * [I host my own XMPP](https://codemadness.org/gopherproxy/?q=gopher.someodd.zip/0/services/xmpp.md), you can contact me via `someodd@xmpp.someodd.zip`!
