@@ -11,7 +11,7 @@ What do I do? I do it all. And I do it hard. Gym. Mandarin. Tech. Community. Bus
 - [LinkedIn](https://www.linkedin.com/in/someodd/) Professional life!
 - [x.com (Twitter)](https://x.com/sue_do_paige) A bit inactive at-the-moment.
 - [My Technology Website](https://www.someodd.zip) Center for my nerdier side; Haskell, code, technology!
-- [Email](mailto:sue.paige@pm.me) Reach out!
+- [Email](mailto:hi@sue.do) Reach out!
 - **WeChat and Xiaohongshu** Please contact me for my 微信 (WeChat) and 小红书 (Redbook)!
 
 ## About Me
@@ -23,7 +23,7 @@ Experienced business leader and technical innovator with 15+ years of experience
 - Extensive experience in software development and technical leadership, spanning startups, academia, and enterprise projects.
 - Delivered technical talks, including a public conference.
 
-Reach out via email for detailed information on my past projects (including my resume), or if you want to utilize my experience: [sue.paige@pm.me](mailto:sue.paige@pm.me).
+Reach out via email for detailed information on my past projects (including my resume), or if you want to utilize my experience: [hi@sue.do](mailto:hi@sue.do).
 
 ## Recent Highlights/Achievements
 
