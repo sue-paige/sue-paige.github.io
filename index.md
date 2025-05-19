@@ -18,7 +18,7 @@ What do I do? I do it all. And I do it hard. Gym. Mandarin. Tech. Community. Bus
 
 Experienced business leader and technical innovator with 15+ years of experience. **Currently:**
 
-- CEO of [China-West Consulting](https://chinawest.consulting), helping business professionals and academics understand Chinese culture and markets.
+- CEO of [China West Consulting](https://chinawest.consulting), helping business professionals and academics understand Chinese culture and markets.
 - Chief Technical Officer at Mood Ring Studios, accountable for monetization strategies, technical leadership, and Haskell/Python software development.
 - Extensive experience in software development and technical leadership, spanning startups, academia, and enterprise projects.
 - Delivered technical talks, including a public conference.
@@ -31,7 +31,7 @@ You can email me for more details and possibly for my resume. I also have an old
 
 Here are some highlights that don't have their own section:
 
-### China-West Consulting (CEO)
+### China West Consulting (CEO)
 
 - Advising companies on successful market entries into China.
 - I appeared in Chinese news ([Sing Tao Daily](https://www.singtaousa.com/))
