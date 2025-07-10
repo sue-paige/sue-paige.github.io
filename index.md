@@ -60,9 +60,8 @@ Here are some highlights that don't have their own section:
 
 Here are just a few of my projects. Here's some other highlights:
 
-- My [Haskell GitHub](https://github.com/someodd) demonstrates 6+ years of Haskell expertise, including formal verification of custom algorithms, contributing to both research and practical implementations.
-- I also have a [website for my technical body of work](https://www.someodd.zip)
-- Operating public services in-house, like radio, forum, IRC, XMPP, Counter-Strike 1.6, and more.
+- My [Haskell GitHub](https://github.com/someodd) demonstrates 6+ years of Haskell expertise, including formal verification of custom algorithms, contributing to both research and practical implementations. I also have an older GitHub which is mostly Python you can request.
+- I also have a [website for my technical body of work](https://www.someodd.zip) for technical projects and showcasing open source software I've made
 - Contributor to open-source projects like Nix.
 
 #### Self-hosting extraordinaire
