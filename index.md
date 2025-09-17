@@ -56,19 +56,31 @@ Here are some highlights that don't have their own section:
 - Working on a documentary for [The Museum of Art and Digital Entertainment](https://themade.org)
 - Member of [Bitreich](https://bitreich.org)
 
-### Open Source, Services
+## Portfolio you can play with
 
 Here are just a few of my projects. Here's some other highlights:
 
 - My [Haskell GitHub](https://github.com/someodd) demonstrates 6+ years of Haskell expertise, including formal verification of custom algorithms, contributing to both research and practical implementations. I also have an older GitHub which is mostly Python you can request.
 - I also have a [website for my technical body of work](https://www.someodd.zip) for technical projects and showcasing open source software I've made
 - Contributor to open-source projects like Nix.
+- Hosting the services I coded on my home server
+
+### Whisper Radio: 24/7 radio program with AI
+
+I host my radio software on my home server. [Try listening to Whisper Radio!](https://radio.someodd.zip/)! It has these features:
+
+* Both moddern and retro AI radio hosts
+* Weather segment
+* Replies to listeners' messages
+* News segment
+* More!
+
+[Whisper Radio's source code!](https://github.com/someodd/whisper-radio)
 
 #### Self-hosting extraordinaire
 
 A preview of the services I host ([many services outlined on my tech website](https://someodd.zip)) on my own server, in my home:
 
-* [web radio](https://radio.someodd.zip/) running my [Whisper Radio](https://github.com/someodd/whisper-radio/) software! AI/automated Internet radio station!
 * [Gopher Protocol server](https://codemadness.org/gopherproxy/?q=gopher.someodd.zip/) -- this acts as a single point of truth, the most up-to-date source of all my tech stuff. Built and served using [my bore software](https://github.com/someodd/bore)! Has features like "ChatGopherPT" which allows you to use an LLM/AI via the Gopher Protocol!
 * [Counter-Strike 1.6 server](https://codemadness.org/gopherproxy/?q=gopher.someodd.zip/0/services/counter-strike.md) for old school gaming! I even have [my own Mumble server](https://codemadness.org/gopherproxy/?q=gopher.someodd.zip/0/services/mumble.md)! Weekly event every Saturday!
 * [phorum](https://codemadness.org/gopherproxy/?q=gopher.someodd.zip/1/phorum): Gopher Protocol forum!
@@ -97,7 +109,7 @@ Some examples:
 
 #### Whisper Radio
 
-[Whisper Radio](https://radio.someodd.zip/stream) is a radio show hosted by AI and Bash scripts. It is ([open source](https://github.com/someodd/whisper-radio)).
+[Whisper Radio](https://radio.someodd.zip/) is a radio show hosted by AI and Bash scripts. It is ([open source](https://github.com/someodd/whisper-radio)).
 
 The radio program has these features (and more!):
 
@@ -111,7 +123,7 @@ The radio program has these features (and more!):
 You can listen below, or [go to the Whisper Radio stream directly](https://radio.someodd.zip).
 
 <audio controls>
-    <source src="https://radio.someodd.zip/stream" type="audio/mpeg">
+    <source src="https://radio.someodd.zip/" type="audio/mpeg">
     Your browser does not support the audio element.
 </audio>
 
