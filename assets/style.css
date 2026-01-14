@@ -300,8 +300,8 @@ li strong {
   color: var(--color-text);
 }
 
-/* Connect with Me section - make existing links look like a link tree */
-#connect-with-me + ul {
+/* connect section - make existing links look like a link tree */
+#connect + ul {
   margin: calc(var(--baseline) * 2) 0;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -310,7 +310,7 @@ li strong {
   padding: 0;
 }
 
-#connect-with-me + ul li {
+#connect + ul li {
   background-color: var(--card-bg);
   border: 1px solid white;
   border-radius: 8px;
@@ -321,12 +321,12 @@ li strong {
   margin-bottom: var(--baseline);
 }
 
-#connect-with-me + ul li:hover {
+#connect + ul li:hover {
   border-color: var(--color-accent);
   border-width: 1px;
 }
 
-#connect-with-me + ul li a {
+#connect + ul li a {
   font-family: var(--font-sans);
   font-weight: 600;
   font-size: 1.1rem;
@@ -337,12 +337,12 @@ li strong {
   position: relative;
 }
 
-#connect-with-me + ul li a:hover {
+#connect + ul li a:hover {
   color: var(--color-accent);
 }
 
 /* Underline animation for links */
-#connect-with-me + ul li a::after {
+#connect + ul li a::after {
   content: '';
   position: absolute;
   width: 0;
@@ -353,13 +353,13 @@ li strong {
   transition: width 0.3s ease, left 0.3s ease;
 }
 
-#connect-with-me + ul li a:hover::after {
+#connect + ul li a:hover::after {
   width: 60%;
   left: 20%;
 }
 
 /* Add simple icons before each link */
-#connect-with-me + ul li:nth-child(1) a::before {
+#connect + ul li:nth-child(1) a::before {
   content: "📸";
   display: block;
   font-size: 2rem;
@@ -367,7 +367,7 @@ li strong {
   transition: transform 0.2s ease;
 }
 
-#connect-with-me + ul li:nth-child(2) a::before {
+#connect + ul li:nth-child(2) a::before {
   content: "💼";
   display: block;
   font-size: 2rem;
@@ -375,15 +375,15 @@ li strong {
   transition: transform 0.2s ease;
 }
 
-#connect-with-me + ul li:nth-child(3) a::before {
-  content: "𝕏";
+#connect + ul li:nth-child(3) a::before {
+  content: ">_";
   display: block;
   font-size: 2rem;
   margin-bottom: 0.5rem;
   transition: transform 0.2s ease;
 }
 
-#connect-with-me + ul li:nth-child(4) a::before {
+#connect + ul li:nth-child(4) a::before {
   content: "👨‍💻";
   display: block;
   font-size: 2rem;
@@ -391,7 +391,7 @@ li strong {
   transition: transform 0.2s ease;
 }
 
-#connect-with-me + ul li:nth-child(5) a::before {
+#connect + ul li:nth-child(5) a::before {
   content: "✉️";
   display: block;
   font-size: 2rem;
@@ -399,7 +399,7 @@ li strong {
   transition: transform 0.2s ease;
 }
 
-#connect-with-me + ul li:nth-child(6) a::before {
+#connect + ul li:nth-child(6) a::before {
   content: "🇨🇳";
   display: block;
   font-size: 2rem;
@@ -407,17 +407,17 @@ li strong {
   transition: transform 0.2s ease;
 }
 
-#connect-with-me + ul li a:hover::before {
+#connect + ul li a:hover::before {
   transform: scale(1.2);
 }
 
 /* Style for the description text */
-#connect-with-me + ul li {
+#connect + ul li {
   position: relative;
 }
 
 /* Format any text directly inside the li but after the link */
-#connect-with-me + ul li > :not(a) {
+#connect + ul li > :not(a) {
   font-size: 0.8rem;
   color: var(--color-subtle);
   display: block;
@@ -428,14 +428,14 @@ li strong {
 }
 
 /* Fix for the last item that's not a link but text */
-#connect-with-me + ul li:last-child {
+#connect + ul li:last-child {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-#connect-with-me + ul li:last-child::before {
+#connect + ul li:last-child::before {
   content: "🇨🇳";
   display: block;
   font-size: 2rem;
@@ -543,7 +543,7 @@ footer {
     font-size: 2rem;
   }
 
-  #connect-with-me + ul {
+  #connect + ul {
     grid-template-columns: 1fr;
   }
   
@@ -579,11 +579,11 @@ footer {
     border-bottom: 1px dotted;
   }
 
-  #connect-with-me + ul {
+  #connect + ul {
     display: block;
   }
 
-  #connect-with-me + ul li {
+  #connect + ul li {
     box-shadow: none;
     border: 1px solid #ddd;
     margin-bottom: 0.5rem;

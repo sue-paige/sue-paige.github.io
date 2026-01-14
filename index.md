@@ -5,16 +5,16 @@ title: Sue Paige (sue.do)
 
 Senior software engineer / CTO building production systems in Haskell & Python (infra, reliability, security). Open to remote roles. A bit of a private person.
 
-## Connect with Me
+## Connect
 
 - [Instagram](https://www.instagram.com/gildedpaige/) Interviews, events, personal life.
 - [LinkedIn](https://www.linkedin.com/in/someodd/) Professional life!
-- [x.com (Twitter)](https://x.com/sue_do_paige) A bit inactive at-the-moment.
+- [GitHub](https://github.com/someodd) A bit inactive at-the-moment.
 - [My Technology Website](https://www.someodd.zip) Center for my nerdier side; Haskell, code, technology!
 - [Email](mailto:hi@sue.do) Reach out!
 - **WeChat and Xiaohongshu** Please contact me for my 微信 (WeChat) and 小红书 (Redbook)!
 
-Reach out via email for detailed information on my past projects (including my resume, or older body of work [older GitHub]), or if you want to utilize my experience: [hi@sue.do](mailto:hi@sue.do).
+Past projects (undisclosed here [older GitHub, too]), references, available on request.
 
 ## What I do best
 
@@ -112,9 +112,11 @@ The domain name `sue.do` is a play on the `sudo` command in Linux.
 
 ![A photo I took backstage at a performance at Great Star Theater](/assets/images/chinatown-volunteering-backstage.jpg)
 
-I have been learning Mandarin and appreciate Chinese culture. I have volunteered for two Chinese (Cantonese) opera houses in Chinatown San Francisco: My Opera and Jing Ying Cantonese Opera.
+I have been learning Mandarin and appreciate Chinese culture. I have volunteered for two Chinese (Cantonese) opera houses in Chinatown San Francisco: My Opera and [Jing Ying Cantonese Opera](https://www.jingyingcantoneseopera.org/).
 
 ### The MADE
 
 Working on a documentary for [The Museum of Art and Digital Entertainment](https://themade.org)...
+
+Please check out [my gopherhole](https://gopher.someodd.zip/) for the most up-to-date information+interesting things. It's my single-point-of-truth.
 
