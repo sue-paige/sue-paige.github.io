@@ -3,7 +3,7 @@ layout: default
 title: Sue Paige (sue.do)
 ---
 
-What do I do? I do it all. And I do it hard. Gym. Mandarin. Tech. Community. Business. Party.
+Senior software engineer / CTO building production systems in Haskell & Python (infra, reliability, security). Open to remote roles. A bit of a private person.
 
 ## Connect with Me
 
@@ -14,68 +14,34 @@ What do I do? I do it all. And I do it hard. Gym. Mandarin. Tech. Community. Bus
 - [Email](mailto:hi@sue.do) Reach out!
 - **WeChat and Xiaohongshu** Please contact me for my 微信 (WeChat) and 小红书 (Redbook)!
 
-## About Me
+Reach out via email for detailed information on my past projects (including my resume, or older body of work [older GitHub]), or if you want to utilize my experience: [hi@sue.do](mailto:hi@sue.do).
 
-Experienced business leader and technical innovator with 15+ years of experience. **Currently:**
+## What I do best
 
-- CEO of [China West Consulting](https://chinawest.consulting), helping business professionals and academics understand Chinese culture and markets.
-- Chief Technical Officer at Mood Ring Studios, accountable for monetization strategies, technical leadership, and Haskell/Python software development.
-- Extensive experience in software development and technical leadership, spanning startups, academia, and enterprise projects.
-- Delivered technical talks, including a public conference.
+- **Senior engineering leadership:** designing, shipping, and owning production systems (Haskell, Python)
+- **Infrastructure & reliability:** self-hosted systems, performance, security, and operational ownership
+- **Cross-cultural work (secondary):** consulting and community projects involving China–US collaboration
 
-Reach out via email for detailed information on my past projects (including my resume), or if you want to utilize my experience: [hi@sue.do](mailto:hi@sue.do).
+## Accomplishments
 
-## Recent Highlights/Achievements
+Some more abstract things (feel free to ask for evidence for what I have not made publicly accessible):
 
-You can email me for more details and possibly for my resume. I also have an older body of open source work available upon request. For more work history you can also see [my LinkedIn](https://linkedin/in/someodd/)!
+- I'm a member of [Bitreich](https://bitreich.org)
+- 15+ years building and operating production software (startups, academia, independent projects)
+- CTO-level ownership of Haskell/Python systems (architecture, delivery, security)
+- Led teams shipping products under real operational constraints
+- Open-source software with sustained usage (incl. a PyPI project reaching ~800 downloads/month, popularity on Hacker news)
+- Delivered technical talks and workshops
+- Led technology nonprofit
+- Chinese cultural: Appearing in Chinese news (e.g., [Sing Tao Daily](https://www.singtaousa.com/)) [I should have a specific link here], Event organizing with Chinatown community and avid financial supporter, especially with the San Francisco Chinese Opera scene, working with [Jing Ying Cantonese Opera Institute](https://www.jingyingcantoneseopera.org/)
 
-Here are some highlights that don't have their own section:
+## Selected Work
 
-### China West Consulting (CEO)
-
-- Advising companies on successful market entries into China.
-- I appeared in Chinese news ([Sing Tao Daily](https://www.singtaousa.com/))
-- Delivered workshops on Chinese cultural trends.
-- Working with a museum ([The MADE](https://themade.org/)) to provide logistics and Chinese services for a documentary
-- Event organizing with Chinatown community and avid financial supporter, especially with the San Francisco Chinese Opera scene, working with [Jing Ying Cantonese Opera Institute](https://www.jingyingcantoneseopera.org/)
-
-### Mood Ring Studios (CTO)
-
-- Used Haskell to optimize & verify mission-critical components using profiling, LiquidHaskell, and Isabelle proof assistant.
-- AI with haskell-ollama and Python.
-- Cybersecurity: responsible for on-site server and sensitive information security.
-
-### Columbia University (Technology Consultant)
-
-- Monetization strategy for a University research project, transitioning to a profitable venture.
-- Oversaw a team of developers to deliver a product.
-- Drastically reduced development time costs for a team of engineers through DevOps strategies
-
-### Volunteer work
-
-- Working on a documentary for [The Museum of Art and Digital Entertainment](https://themade.org)
-- Member of [Bitreich](https://bitreich.org)
-
-## Portfolio you can play with
-
-Here are just a few of my projects. Here's some other highlights:
+Some flashy projects to show off; a portfolio you can play with. First checkout:
 
 - My [Haskell GitHub](https://github.com/someodd) demonstrates 6+ years of Haskell expertise, including formal verification of custom algorithms, contributing to both research and practical implementations. I also have an older GitHub which is mostly Python you can request.
-- I also have a [website for my technical body of work](https://www.someodd.zip) for technical projects and showcasing open source software I've made
+- I also have a [website for my current technical body of work](https://www.someodd.zip)
 - Contributor to open-source projects like Nix.
-- Hosting the services I coded on my home server
-
-### Whisper Radio: 24/7 radio program with AI
-
-I host my radio software on my home server. [Try listening to Whisper Radio!](https://radio.someodd.zip/)! It has these features:
-
-* Both moddern and retro AI radio hosts
-* Weather segment
-* Replies to listeners' messages
-* News segment
-* More!
-
-[Whisper Radio's source code!](https://github.com/someodd/whisper-radio)
 
 #### Self-hosting extraordinaire
 
@@ -87,24 +53,23 @@ A preview of the services I host ([many services outlined on my tech website](ht
 * [I host my own XMPP](https://codemadness.org/gopherproxy/?q=gopher.someodd.zip/0/services/xmpp.md), you can contact me via `someodd@xmpp.someodd.zip`!
 * [IRC server](https://codemadness.org/gopherproxy/?q=gopher.someodd.zip/0/services/irc.md): you can actually join this through my XMPP server! Actually surprisingly active with some amazing people!
 
-#### Bore
+#### I wrote my own Internet Gopher Protocol Stack
 
-Bore is like [Jekyll](https://jekyllrb.com/), a static website builder, except it's for the [Gopher Protocol](https://en.wikipedia.org/wiki/Gopher_(protocol)). Some of the highlights:
+I even have an article about this, but my publishing stack weaves an ancient Internet protocol together with the modern web and Jekyll. Check out [my gopherhole](https://gopher.someodd.zip) (built with this stack). Here are some highlights of my stack:
+
+* Bore is like [Jekyll](https://jekyllrb.com/), a static website builder, except it's for the [Gopher Protocol](https://en.wikipedia.org/wiki/Gopher_(protocol)). Blogging system, with Atom/RSS, tagging, indexing
 
 * Formal verification using [LiquidHaskell](https://ucsd-progsys.github.io/liquidhaskell/) for the custom search algorithm, through my [ryvm (Rank You Very Much)](https://github.com/someodd/ryvm) software
 * Property-based testing using [QuickCheck](https://en.wikipedia.org/wiki/QuickCheck) for the custom search algorithm
-* Blogging system, with Atom/RSS, tagging, indexing
+* Venusia is a Gopher framework, allowing to be used as a kind of reverse proxy and dynamic gopher content daemon.
 
-Some examples:
-
-  * [My technical website's phlog-mirror](https://www.someodd.zip/phlog-mirror/) gets built by Bore's command to archive to Jekyll!
-  * [View the gopherhole built by Bore using an HTTP proxy](https://codemadness.org/gopherproxy/?q=gopher.someodd.zip%2F)
+[My blog](https://www.someodd.zip/phlog-mirror/) is a mirror of my gopherhole built by this stack.
 
 #### haskellcard
 
-[haskellcard](https://github.com/someodd/haskellcard) is a game engine built in Haskell, that is similar to [HyperCard](https://en.wikipedia.org/wiki/HyperCard).
+[haskellcard](https://github.com/someodd/haskellcard) is an SDL game engine built in Haskell, that is similar to [HyperCard](https://en.wikipedia.org/wiki/HyperCard).
 
-  * Nix packages setup for building and development
+  * Nix packages setup for building, and development environment
   * Game state and level format is the same thing and perfectly deterministic
 
 #### Whisper Radio
@@ -119,6 +84,8 @@ The radio program has these features (and more!):
 * Weather report
 * Reads the latest thread in my Gopher forum [phorum](https://codemadness.org/gopherproxy/?q=gopher.someodd.zip%2F1%2Fphorum)
 * Talking/reading segments, like promoting people's projects, or reading poetry, interesting bits of history
+* Hosted on my home server
+* News segment
 
 You can listen below, or [go to the Whisper Radio stream directly](https://radio.someodd.zip).
 
@@ -138,3 +105,16 @@ You can listen below, or [go to the Whisper Radio stream directly](https://radio
 ![Waffle](/assets/portfolio/waffle-playing-hacking-game.gif)
 
 The domain name `sue.do` is a play on the `sudo` command in Linux.
+
+## Volunteer work
+
+### Chinatown
+
+![A photo I took backstage at a performance at Great Star Theater](/assets/images/chinatown-volunteering-backstage.jpg)
+
+I have been learning Mandarin and appreciate Chinese culture. I have volunteered for two Chinese (Cantonese) opera houses in Chinatown San Francisco: My Opera and Jing Ying Cantonese Opera.
+
+### The MADE
+
+Working on a documentary for [The Museum of Art and Digital Entertainment](https://themade.org)...
+
