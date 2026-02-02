@@ -6,7 +6,7 @@ title: Sue Paige (sue.do)
 Sue Paige. Engineering leader.
 Haskell + Python. Production systems.  
 Infra. Reliability. Security.
-Almost 20 years building and operating software.  
+~20 years building and operating software.  
 Open to remote roles.
 
 ## Connect
@@ -49,3 +49,5 @@ It keeps my hands warm. It leaks into how I ship.
 
 Ongoing volunteer and community work connected to arts and cultural organizations,
 including projects in San Francisco Chinatown.
+
+Please email me for details.
