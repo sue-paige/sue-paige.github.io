@@ -359,15 +359,7 @@ li strong {
 }
 
 /* Add simple icons before each link */
-#connect + ul li:nth-child(1) a::before {
-  content: "📸";
-  display: block;
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
-  transition: transform 0.2s ease;
-}
-
-#connect + ul li:nth-child(2) a::before {
+#connect a[href*="linkedin.com"]::before {
   content: "💼";
   display: block;
   font-size: 2rem;
@@ -375,7 +367,7 @@ li strong {
   transition: transform 0.2s ease;
 }
 
-#connect + ul li:nth-child(3) a::before {
+#connect a[href*="someodd.zip"]::before {
   content: ">_";
   display: block;
   font-size: 2rem;
@@ -383,15 +375,7 @@ li strong {
   transition: transform 0.2s ease;
 }
 
-#connect + ul li:nth-child(4) a::before {
-  content: "👨‍💻";
-  display: block;
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
-  transition: transform 0.2s ease;
-}
-
-#connect + ul li:nth-child(5) a::before {
+#connect a[href^="mailto:"]::before {
   content: "✉️";
   display: block;
   font-size: 2rem;
@@ -399,7 +383,7 @@ li strong {
   transition: transform 0.2s ease;
 }
 
-#connect + ul li:nth-child(6) a::before {
+#connect a[href*="chinawest.consulting"]::before {
   content: "🇨🇳";
   display: block;
   font-size: 2rem;
