@@ -7,13 +7,14 @@ Sue Paige. Engineering leader.
 Haskell + Python. Production systems.  
 Infra. Reliability. Security.
 Almost 20 years building and operating software.  
-Open to remote roles.
+**Open to remote roles.**
 
 ## Connect
 
 - [LinkedIn](https://www.linkedin.com/in/sue-p/)
 - [Email](mailto:hi@sue.do)
 - [Technical work](https://www.someodd.zip)
+- [US-China work](https://chinawest.consulting)
 
 ## What I do well
 
