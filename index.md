@@ -3,11 +3,9 @@ layout: default
 title: Sue Paige (sue.do)
 ---
 
-Sue Paige. Senior software engineer / engineering leader.
-
+Sue Paige. Engineering leader.
 Haskell + Python. Production systems.  
 Infra. Reliability. Security.
-
 Almost 20 years building and operating software.  
 Open to remote roles.
 
