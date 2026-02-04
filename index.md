@@ -3,6 +3,8 @@ layout: default
 title: Sue Paige
 ---
 
+# Sue Paige
+
 Almost 20 years of production systems.  
 Haskell. Python. Infrastructure. Reliability.  
 **Available for remote roles.**
