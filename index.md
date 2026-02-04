@@ -24,13 +24,13 @@ Haskell. Python. Infrastructure. Reliability.
 
 ## Select Works
 
-**Waffle:** [Code & Analysis](https://github.com/someodd/waffle)  
+**Waffle:** [Code](https://github.com/someodd/waffle) | [Post](https://www.someodd.zip/phlog/waffle.gopher) 
 Client application engineering focused on protocols, memory profiling, and correctness.
 
-**Whisper Radio:** [Live Station](https://radio.someodd.zip)  
+**Whisper Radio:** [Live Station](https://radio.someodd.zip) | [Code](https://github.com/someodd/whisper-radio) | [Post](https://www.someodd.zip/phlog/whisper-radio.gopher) 
 A bot-controlled audio stream exploring automated curation.
 
-**Haskellcard:** [Engine Architecture](https://github.com/someodd/haskellcard)  
+**Haskellcard:** [Code](https://github.com/someodd/haskellcard) | [Post](https://www.someodd.zip/phlog/haskellcard.gopher) 
 A Haskell game engine emphasizing deterministic state and functional systems design.
 
 ## The Laboratory (someodd.zip)
