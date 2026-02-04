@@ -1,54 +1,53 @@
 ---
 layout: default
-title: Sue Paige (sue.do)
+title: Sue Paige
 ---
 
-Sue Paige. Engineering leader.
-Haskell + Python. Production systems.  
-Infra. Reliability. Security.
-Almost 20 years building and operating software.  
-**Open to remote roles.**
+<div class="intro">
 
-## Connect
+# Sue Paige.
+# Engineering Leader.
+
+Almost 20 years of production systems.  
+Haskell. Python. Infrastructure. Reliability.  
+**Available for remote leadership roles.**
+
+</div>
+
+## Coordinates
 
 - [LinkedIn](https://www.linkedin.com/in/sue-p/)
 - [Email](mailto:hi@sue.do)
-- [Technical work](https://www.someodd.zip)
-- [US-China work](https://chinawest.consulting)
+- [someodd.zip](https://www.someodd.zip)
+- [chinawest.consulting](https://chinawest.consulting)
 
-## What I do well
+## Competencies
 
-- Owning production systems end-to-end
-- Infrastructure and reliability (operability, cost, longevity)
-- Security-minded engineering (practical, not loud)
-- Leading small teams with calm momentum
-- Cross-cultural technical and consulting work (China–US):  
-  [chinawest.consulting](https://chinawest.consulting)
+**System Ownership** End-to-end architecture of long-running production systems. Operability, cost, and longevity are not afterthoughts; they are the product.
 
-## Highlights
+**Engineering Leadership** Leading small, high-output teams with calm momentum. I favor practical, security-minded engineering over loud, complex abstractions.
 
-- Senior / CTO-level ownership (architecture, delivery, security)
-- Long-running systems under real constraints
-- Open-source work with sustained users
-- Talks, interviews, and showcases (shared on request)
+**Cross-Cultural Operations** Specialized technical and consulting work bridging China and the US.
 
-## A few projects
+## Select Works
 
-- [Waffle](https://github.com/someodd/waffle) — client application work; protocols, profiling, testing, correctness
-- [Whisper Radio](https://radio.someodd.zip) — a bot-controlled radio station
-- [haskellcard](https://github.com/someodd/haskellcard) — a Haskell game engine; deterministic state and systems design
+**Waffle** — [Code & Analysis](https://github.com/someodd/waffle)  
+Client application engineering focused on protocols, memory profiling, and correctness.
 
-## Outside work
+**Whisper Radio** — [Live Station](https://radio.someodd.zip)  
+A bot-controlled audio stream exploring automated curation.
 
-I keep [small personal systems projects](http://www.someodd.zip/tags/my_servs/) going for fun.  
-Infra, automation, reliability.  
-It keeps my hands warm. It leaks into how I ship.
+**Haskellcard** — [Engine Architecture](https://github.com/someodd/haskellcard)  
+A Haskell game engine emphasizing deterministic state and functional systems design.
+
+## The Laboratory
+
+My professional work happens here. My experimental work happens at **[someodd.zip](http://www.someodd.zip/tags/my_servs/)**.
+
+That is where I keep personal systems, Gopher servers, and automation projects. It is a space for raw engineering and keeping my hands warm. It leaks into how I ship: reliable, simple, and understood.
 
 ## Community
 
-![A photo I took backstage at a performance at Great Star Theater](/assets/images/chinatown-volunteering-backstage.jpg)
+![Backstage at Great Star Theater, San Francisco Chinatown](/assets/images/chinatown-volunteering-backstage.jpg)
 
-Ongoing volunteer and community work connected to arts and cultural organizations,
-including projects in San Francisco Chinatown.
-
-Please email me for details.
+I maintain ongoing volunteer commitments with arts and cultural organizations, with a specific focus on San Francisco Chinatown.
