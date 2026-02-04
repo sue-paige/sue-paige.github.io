@@ -1,235 +1,655 @@
-/* THEME: Dark Academia x Swiss Editorial
-   AUTHOR: Sue Paige (via Gemini Design Bureau)
-*/
+/* Font imports */
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@400;500&display=swap');
-
+/* Base styles and Typography */
 :root {
-  /* Typography */
-  --font-serif: "Crimson Pro", "Times New Roman", serif;
-  --font-sans: "Inter", Helvetica, Arial, sans-serif;
-
-  /* Palette */
-  --bg-paper: #f4f1ea;       /* Warmer, aged paper */
-  --ink-black: #1a1a1a;      /* Softened black */
-  --ink-subtle: #585858;     /* Metadata gray */
-  --accent-red: #7a0000;     /* Oxblood / Dried Ink */
-
-  /* Spacing */
-  --rhythm: 1.5rem;
-  --gutter: 2rem;
+  --font-serif: "Crimson Pro", "Equity", "Athelas", "Palatino", "Georgia", serif;
+  --font-sans: "Inter", "Concourse", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  --font-mono: "JetBrains Mono", "Triplicate", "Consolas", "Menlo", monospace;
+  --color-bg: #fcfbf4; /* Subtle yellowish off-white */
+  --color-text: #121212;
+  --color-accent: #8b0000;
+  --color-subtle: #6e6e6e;
+  --color-link: #3b5998;
+  --color-link-hover: #8b0000;
+  --text-base-size: 1.125rem;
+  --line-height: 1.6;
+  --spacing: 1.5rem;
+  --max-width: 40rem;
+  --baseline: 1.5rem;
+  --card-bg: rgba(252, 251, 245, 0.8);
+  --card-border: #e8e5d9;
 }
 
 * {
   box-sizing: border-box;
-}
-
-html {
-  font-size: 18px; /* Base size bump for readability */
-  -webkit-font-smoothing: antialiased;
-}
-
-body {
-  background-color: var(--bg-paper);
-  color: var(--ink-black);
-  font-family: var(--font-serif);
-  line-height: 1.6;
   margin: 0;
   padding: 0;
 }
 
-/* --- GRID LAYOUT SYSTEM --- */
-
-.layout-grid {
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 4rem 2rem;
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-variant-ligatures: common-ligatures;
+  font-feature-settings: "liga", "clig";
+  font-kerning: normal;
 }
 
-/* The Main Content Container
-   We treat the Markdown output as a flat list, so we use CSS Grid
-   on the <main> tag to organize it.
-*/
-main {
-  display: grid;
-  grid-template-columns: 1fr; /* Mobile default */
-  gap: var(--rhythm);
-}
-
-/* DESKTOP LAYOUT (The "Editorial" Spread) */
-@media (min-width: 900px) {
-  main {
-    grid-template-columns: 200px 1fr; /* Left margin for headers, Right for content */
-    column-gap: 4rem;
-    align-items: baseline;
-  }
-
-  /* The Intro Section spans full width or sits proudly */
-  .intro {
-    grid-column: 2 / -1;
-    margin-bottom: 4rem;
-  }
-
-  /* Headers become marginalia (sticky labels on the left) */
-  h2 {
-    grid-column: 1 / 2;
-    text-align: right;
-    position: sticky;
-    top: 4rem;
-    margin-top: 0;
-    font-size: 0.85rem;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    font-family: var(--font-sans);
-    color: var(--accent-red);
-    border-bottom: none;
-    padding-right: 1rem;
-    border-right: 1px solid rgba(0,0,0,0.1);
-    height: fit-content;
-  }
-
-  /* Content flows into the right column */
-  h2 + ul,
-  h2 + p,
-  h2 + p + ul,
-  h2 + p + p,
-  h2 + strong,
-  h2 + .content-block {
-    grid-column: 2 / 3;
-    max-width: 38rem; /* Maintain readable line length */
-  }
-
-  /* Fix for the "Select Works" section where strict sibling selectors might fail
-     if markdown adds divs. This assumes standard markdown output. */
-}
-
-/* --- TYPOGRAPHY --- */
-
-h1 {
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
   font-family: var(--font-serif);
-  font-weight: 300; /* Elegant, not heavy */
-  font-size: clamp(2.5rem, 5vw, 4.5rem); /* Fluid scaling */
-  line-height: 1.1;
-  margin: 0 0 1.5rem 0;
+  font-size: var(--text-base-size);
+  line-height: var(--line-height);
+  padding: 2rem 1rem;
+  max-width: 100%;
+  margin: 0 auto;
+  text-rendering: optimizeLegibility;
+}
+
+/* Header styles */
+header {
+  margin-bottom: calc(var(--baseline) * 2);
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: var(--baseline);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  line-height: calc(var(--baseline) * 2);
+  margin: 0;
+  font-weight: 700;
   letter-spacing: -0.02em;
-  color: var(--ink-black);
 }
 
-h2 {
-  /* Mobile styling (default) */
+/* Main content styles */
+main {
+  margin-bottom: calc(var(--baseline) * 2);
+  max-width: 38rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main h1 {
+  font-size: 2rem;
+  line-height: calc(var(--baseline) * 1.5);
   font-family: var(--font-sans);
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  letter-spacing: 0.15em;
-  color: var(--accent-red);
-  margin-top: 3rem;
-  border-bottom: 1px solid rgba(0,0,0,0.1);
-  padding-bottom: 0.5rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin: calc(var(--baseline) * 2) 0 var(--baseline);
+  color: var(--color-text);
 }
 
+main h2 {
+  font-size: 1.5rem;
+  font-family: var(--font-sans);
+  font-weight: 700;
+  line-height: calc(var(--baseline) * 1.5);
+  letter-spacing: -0.01em;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: calc(var(--baseline) / 3);
+  margin-top: calc(var(--baseline) * 2);
+  margin-bottom: var(--baseline);
+  color: var(--color-text);
+}
+
+/* Refined typography for h3 and h4 elements */
 h3 {
+  /* Font properties */
+  font-family: var(--font-sans);
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: calc(var(--baseline) * 1.2);
+  letter-spacing: -0.01em;
+
+  /* Spacing for vertical rhythm */
+  margin-top: calc(var(--baseline) * 2);
+  margin-bottom: var(--baseline);
+  padding-bottom: calc(var(--baseline) / 4);
+
+  /* Visual style */
+  color: var(--color-accent);
+  border-bottom: 1px solid rgba(139, 0, 0, 0.1);
+  position: relative;
+
+  /* Layout fix */
+  display: block;
+  width: 100%;
+  clear: both;
+}
+
+/* Add breathing room after each section */
+h3:not(:first-of-type) {
+  margin-top: calc(var(--baseline) * 2.5);
+}
+
+/* Clear space before lists under h3 */
+h3 + ul {
+  margin-top: var(--baseline);
+  clear: both;
+}
+
+h4 {
+  /* Font properties */
+  font-family: var(--font-sans);
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: var(--baseline);
+
+  /* Spacing for vertical rhythm */
+  margin-top: calc(var(--baseline) * 1.5);
+  margin-bottom: calc(var(--baseline) / 2);
+
+  /* Visual style */
+  color: var(--color-text);
+  display: block;
+  position: relative;
+  padding-left: 0;
+  clear: both;
+}
+
+/* Improve spacing when h4 follows h3 */
+h3 + h4 {
+  margin-top: var(--baseline);
+}
+
+/* Special styling for the "High level:" text that appears in your page */
+h3 + p:first-of-type {
   font-family: var(--font-sans);
   font-weight: 500;
-  font-size: 1.1rem;
-  margin-top: 2rem;
-  margin-bottom: 0.5rem;
-  color: var(--ink-black);
+  font-size: 1rem;
+  margin-top: calc(var(--baseline) / 2);
+  margin-bottom: var(--baseline);
+  color: var(--color-subtle);
+  clear: both;
 }
 
-strong {
-  font-weight: 600;
-  color: var(--ink-black);
+/* Ensure proper spacing when content follows an h4 */
+h4 + p,
+h4 + ul {
+  margin-top: calc(var(--baseline) / 3);
+}
+
+/* Enhanced list spacing in portfolio sections */
+h3 + ul > li {
+  margin-bottom: calc(var(--baseline) / 2);
+}
+
+/* Proper link styling in headings */
+h3 a, h4 a {
+  color: inherit;
+  border-bottom: 1px dotted rgba(139, 0, 0, 0.3);
+}
+
+h3 a:hover, h4 a:hover {
+  color: var(--color-link-hover);
+  border-bottom: 1px solid var(--color-link-hover);
+}
+
+/* Audio element styling */
+audio {
+  display: block;
+  margin: var(--baseline) 0 calc(var(--baseline) * 1.5);
+  width: 100%;
+  max-width: 300px;
+}
+
+/* Fix for headings following audio elements */
+audio + h3,
+[id^="other"] {
+  clear: both;
+  margin-top: calc(var(--baseline) * 2);
+}
+
+/* Add clearfix utility */
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 p {
-  margin-bottom: 1.5rem;
-  font-weight: 400;
+  margin-bottom: var(--baseline);
+  hyphens: auto;
+  line-height: var(--baseline);
 }
 
-/* The Intro Text */
-.intro p {
-  font-size: 1.25rem;
-  line-height: 1.5;
-  color: var(--ink-subtle);
-  max-width: 40rem;
+p:last-child {
+  margin-bottom: 0;
 }
 
-.intro strong {
-  color: var(--ink-black);
-  border-bottom: 1px solid var(--accent-red);
+strong {
+  font-weight: 700;
 }
 
-/* --- LINKS (The "Cinnabar" Touch) --- */
+em {
+  font-style: italic;
+}
 
 a {
-  color: inherit;
+  color: var(--color-link);
   text-decoration: none;
-  border-bottom: 1px solid rgba(122, 0, 0, 0.3);
-  transition: all 0.2s ease;
+  border-bottom: 1px solid transparent;
+  transition: color 0.2s, border-bottom-color 0.2s;
 }
 
-a:hover {
-  color: var(--accent-red);
-  border-bottom-color: var(--accent-red);
-  background-color: rgba(122, 0, 0, 0.05);
+a:hover, a:focus {
+  color: var(--color-link-hover);
+  border-bottom-color: var(--color-link-hover);
 }
 
-/* --- LISTS & METADATA --- */
-
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0 0 2rem 0;
+code {
+  font-family: var(--font-mono);
+  font-size: 0.85em;
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
 }
 
-/* The "Coordinates" Link List */
-h2#coordinates + ul {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-}
-
-h2#coordinates + ul li {
-  margin-bottom: 0.5rem;
+/* Table styles */
+table {
+  width: 100%;
+  margin: var(--baseline) 0;
+  border-collapse: collapse;
   font-family: var(--font-sans);
   font-size: 0.9rem;
 }
 
-/* Standard lists */
+table td {
+  padding: calc(var(--baseline) / 3);
+  text-align: center;
+  border-bottom: none;
+  font-weight: 600;
+}
+
+/* Styling for the top three cells (Titles) */
+table tr:first-child td {
+  font-size: 1.1rem;
+  letter-spacing: 0.01em;
+}
+
+/* Lists */
+ul, ol {
+  margin: var(--baseline) 0 var(--baseline) 1.5rem;
+}
+
 li {
+  margin-bottom: calc(var(--baseline) / 2);
+  line-height: var(--baseline);
+  clear: both;
+}
+
+li:last-child {
+  margin-bottom: 0;
+}
+
+li ul, li ol {
+  margin-top: calc(var(--baseline) / 3);
+  margin-bottom: 0;
+}
+
+/* Style for strong elements in list items */
+li strong {
+  font-family: var(--font-sans);
+  font-size: 1.1rem;
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--color-text);
+}
+
+/* connect section - make existing links look like a link tree */
+#connect + ul {
+  margin: calc(var(--baseline) * 2) 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--baseline);
+  list-style: none;
+  padding: 0;
+}
+
+#connect + ul li {
+  background-color: var(--card-bg);
+  border: 1px solid white;
+  border-radius: 8px;
+  padding: var(--baseline);
+  text-align: center;
+  transition: border-color 0.3s;
+  min-height: calc(var(--baseline) * 3);
+  margin-bottom: var(--baseline);
+}
+
+#connect + ul li:hover {
+  border-color: var(--color-accent);
+  border-width: 1px;
+}
+
+#connect + ul li a {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: var(--color-link);
+  border-bottom: none;
+  display: block;
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+
+#connect + ul li a:hover {
+  color: var(--color-accent);
+}
+
+/* Underline animation for links */
+#connect + ul li a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 50%;
+  background-color: var(--color-accent);
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+#connect + ul li a:hover::after {
+  width: 60%;
+  left: 20%;
+}
+
+/* Add simple icons before each link */
+#connect a[href*="linkedin.com"]::before {
+  content: "💼";
+  display: block;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  transition: transform 0.2s ease;
+}
+
+#connect a[href*="someodd.zip"]::before {
+  content: ">_";
+  display: block;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  transition: transform 0.2s ease;
+}
+
+#connect a[href^="mailto:"]::before {
+  content: "✉️";
+  display: block;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  transition: transform 0.2s ease;
+}
+
+#connect a[href*="chinawest.consulting"]::before {
+  content: "🇨🇳";
+  display: block;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  transition: transform 0.2s ease;
+}
+
+#connect + ul li a:hover::before {
+  transform: scale(1.2);
+}
+
+/* Style for the description text */
+#connect + ul li {
+  position: relative;
+}
+
+/* Format any text directly inside the li but after the link */
+#connect + ul li > :not(a) {
+  font-size: 0.8rem;
+  color: var(--color-subtle);
+  display: block;
+  margin-top: 0.25rem;
+  font-family: var(--font-sans);
+  line-height: 1.2;
+  padding: 0 0.5rem;
+}
+
+/* Fix for the last item that's not a link but text */
+#connect + ul li:last-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#connect + ul li:last-child::before {
+  content: "🇨🇳";
+  display: block;
+  font-size: 2rem;
   margin-bottom: 0.5rem;
 }
 
-/* --- IMAGERY --- */
-
-img {
-  width: 100%;
-  height: auto;
-  border-radius: 2px;
-  filter: grayscale(100%) contrast(1.1); /* Editorial B&W look */
-  transition: filter 0.3s ease;
-  margin-bottom: 1rem;
+/* About Me and Projects sections */
+h2 {
+  position: relative;
+  padding-left: calc(var(--baseline) / 2);
+  margin-top: calc(var(--baseline) * 3);
 }
 
-img:hover {
-  filter: grayscale(0%) contrast(1); /* Reveal color on hover */
+h2::before, #projects-and-contributions::before {
+  content: "";
+  position: absolute;
+  left: -0.25rem;
+  top: 0;
+  bottom: 0;
+  width: 0.25rem;
+  background-color: var(--color-accent);
+  opacity: 0.2;
 }
 
-/* --- FOOTER --- */
+/* Styling for Highlights/Achievements section */
+#highlightsachievements {
+  position: relative;
+  padding-left: calc(var(--baseline) / 2);
+  margin-top: calc(var(--baseline) * 3);
+}
 
-footer {
-  margin-top: 4rem;
-  padding-top: 2rem;
-  border-top: 1px solid rgba(0,0,0,0.1);
+#highlightsachievements::before {
+  content: "";
+  position: absolute;
+  left: -0.25rem;
+  top: 0;
+  bottom: 0;
+  width: 0.25rem;
+  background-color: var(--color-accent);
+  opacity: 0.2;
+}
+
+/* Projects section styling */
+#projects-and-contributions + ul > li {
+  margin-bottom: calc(var(--baseline) * 1.5);
+  padding-bottom: var(--baseline);
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+#projects-and-contributions + ul > li:last-child {
+  border-bottom: none;
+}
+
+#projects-and-contributions + ul > li > strong {
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: calc(var(--baseline) / 2);
   font-family: var(--font-sans);
-  font-size: 0.75rem;
-  color: var(--ink-subtle);
-  text-align: center;
 }
 
-@media (min-width: 900px) {
-  footer {
-    padding-left: 200px; /* Align with content column */
-    text-align: left;
+/* Additional header/intro styling */
+header + main > p:first-of-type {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin: calc(var(--baseline) * 1.5) 0 calc(var(--baseline) * 2);
+  text-align: center;
+  max-width: 36rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Make the Domain Name Note special */
+main > p:last-of-type {
+  margin-top: calc(var(--baseline) * 2);
+  padding: var(--baseline);
+  background-color: rgba(0,0,0,0.03);
+  border-radius: 4px;
+  font-family: var(--font-mono);
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* Footer */
+footer {
+  margin-top: calc(var(--baseline) * 2);
+  padding-top: var(--baseline);
+  border-top: 1px solid #ddd;
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--color-subtle);
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  :root {
+    --text-base-size: 1.05rem;
+    --max-width: 100%;
   }
+
+  body {
+    padding: 1.5rem 1rem;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  #connect + ul {
+    grid-template-columns: 1fr;
+  }
+
+  /* Adjust h3 indicator for mobile */
+  h3::before {
+    left: -0.75rem;
+    width: 0.4rem;
+    height: 0.4rem;
+  }
+
+  /* Adjust h4 indicator for mobile */
+  h4::before {
+    left: -1rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  :root {
+    --max-width: 36rem;
+  }
+}
+
+/* Print styles */
+@media print {
+  body {
+    font-size: 11pt;
+    max-width: 100%;
+    padding: 0;
+  }
+
+  a {
+    color: var(--color-text);
+    border-bottom: 1px dotted;
+  }
+
+  #connect + ul {
+    display: block;
+  }
+
+  #connect + ul li {
+    box-shadow: none;
+    border: 1px solid #ddd;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+  }
+
+  /* Simplify h3 and h4 styles for print */
+  h3::before, h4::before {
+    display: none;
+  }
+
+  h3 {
+    border-bottom: 1px solid #000;
+  }
+}
+
+/* Visual vertical rhythm guide (toggle for development) */
+.show-rhythm {
+  position: relative;
+}
+
+.show-rhythm::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(0, 0, 255, 0.1),
+    rgba(0, 0, 255, 0.1) 1px,
+    transparent 1px,
+    transparent var(--baseline)
+  );
+  pointer-events: none;
+  z-index: 1000;
+}
+
+/* Responsive image styling */
+img {
+  max-width: 100%; /* Ensures image doesn't exceed container width */
+  height: auto; /* Maintains aspect ratio */
+  display: block; /* Removes bottom margin/spacing that can occur with inline images */
+  margin: 1.5rem 0; /* Adds some vertical spacing that aligns with typography */
+}
+
+/* For images that need special treatment, like the Waffle GIF */
+main img {
+  border-radius: 4px; /* Optional: adds slight rounding to images */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Optional: adds subtle shadow */
+}
+
+/* Ensure images in articles/sections align with text width */
+main p img,
+main li img,
+main h2 + img,
+main h3 + img,
+main h4 + img {
+  max-width: 100%;
+  width: auto;
+}
+
+/* If you want a specific max-width for images that matches content width */
+@media (min-width: 768px) {
+  main img {
+    max-width: min(100%, 700px); /* Adjust 700px to match your content width */
+  }
+}
+
+/* If you want images to maintain specific aspect ratios related to your line height */
+main img[src$=".gif"],
+main img[src*="portfolio"] {
+  /* This maintains aspect ratio while ensuring height is divisible by your line height */
+  /* Assuming a base line height of 1.5rem (24px at 16px base font) */
+  object-fit: cover;
+  height: auto;
+}
+
+/* Audio controls responsive styling to match image constraints */
+audio {
+  width: 100%;
+  max-width: 100%;
+  margin: 1.5rem 0;
 }
