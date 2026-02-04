@@ -491,7 +491,10 @@ header + main > p:first-of-type {
   margin-right: auto;
 }
 
-/* Make the Domain Name Note special */
+/* Make the Domain Name Note special
+
+I really like this, but I'm disabling for now.
+
 main > p:last-of-type {
   margin-top: calc(var(--baseline) * 2);
   padding: var(--baseline);
@@ -501,6 +504,7 @@ main > p:last-of-type {
   text-align: center;
   font-size: 0.9rem;
 }
+*/
 
 /* Footer */
 footer {
