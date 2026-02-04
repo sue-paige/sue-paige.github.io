@@ -8,17 +8,25 @@
   --font-serif: "Crimson Pro", "Equity", "Athelas", "Palatino", "Georgia", serif;
   --font-sans: "Inter", "Concourse", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   --font-mono: "JetBrains Mono", "Triplicate", "Consolas", "Menlo", monospace;
+
   --color-bg: #fcfbf4; /* Subtle yellowish off-white */
   --color-text: #121212;
   --color-accent: #8b0000;
   --color-subtle: #6e6e6e;
   --color-link: #3b5998;
   --color-link-hover: #8b0000;
+
+  /* Type scale */
   --text-base-size: 1.125rem;
-  --line-height: 1.6;
-  --spacing: 1.5rem;
+
+  /* Vertical rhythm: one unit to rule them all */
+  --baseline: 1.75rem;                 /* chosen for Crimson Pro @ 1.125rem */
+  --half: calc(var(--baseline) / 2);
+
+  /* Layout constraints */
   --max-width: 40rem;
-  --baseline: 1.5rem;
+
+  /* Cards */
   --card-bg: rgba(252, 251, 245, 0.8);
   --card-border: #e8e5d9;
 }
@@ -42,11 +50,15 @@ body {
   color: var(--color-text);
   font-family: var(--font-serif);
   font-size: var(--text-base-size);
-  line-height: var(--line-height);
-  padding: 2rem 1rem;
+  line-height: var(--baseline);
+  padding: calc(var(--baseline) * 1) 1rem;
   max-width: 100%;
   margin: 0 auto;
   text-rendering: optimizeLegibility;
+}
+
+.layout-grid {
+  max-width: 100%;
 }
 
 /* Header styles */
@@ -68,14 +80,15 @@ header h1 {
 /* Main content styles */
 main {
   margin-bottom: calc(var(--baseline) * 2);
-  max-width: 38rem;
+  max-width: 36rem; /* slightly tighter measure for faster skim */
   margin-left: auto;
   margin-right: auto;
 }
 
+/* Title inside content (rare; keep) */
 main h1 {
   font-size: 2rem;
-  line-height: calc(var(--baseline) * 1.5);
+  line-height: calc(var(--baseline) * 2);
   font-family: var(--font-sans);
   font-weight: 700;
   letter-spacing: -0.02em;
@@ -86,36 +99,50 @@ main h1 {
 main h2 {
   font-size: 1.5rem;
   font-family: var(--font-sans);
-  font-weight: 700;
-  line-height: calc(var(--baseline) * 1.5);
-  letter-spacing: -0.01em;
-  border-bottom: 1px solid #ddd;
-  padding-bottom: calc(var(--baseline) / 3);
+  font-weight: 650;
+  letter-spacing: -0.005em;
+  line-height: var(--baseline);
+
   margin-top: calc(var(--baseline) * 2);
   margin-bottom: var(--baseline);
+
+  border-bottom: 1px solid #ddd;
+  padding-bottom: var(--half);
+
   color: var(--color-text);
+
+  /* left accent bar container */
+  position: relative;
+  padding-left: var(--half);
+}
+
+/* Accent bar for section headings */
+main h2::before {
+  content: "";
+  position: absolute;
+  left: -0.25rem;
+  top: 0;
+  bottom: 0;
+  width: 0.25rem;
+  background-color: var(--color-accent);
+  opacity: 0.2;
 }
 
 /* Refined typography for h3 and h4 elements */
 h3 {
-  /* Font properties */
   font-family: var(--font-sans);
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   font-weight: 600;
-  line-height: calc(var(--baseline) * 1.2);
-  letter-spacing: -0.01em;
+  letter-spacing: -0.005em;
+  line-height: var(--baseline);
 
-  /* Spacing for vertical rhythm */
   margin-top: calc(var(--baseline) * 2);
   margin-bottom: var(--baseline);
-  padding-bottom: calc(var(--baseline) / 4);
+  padding-bottom: var(--half);
 
-  /* Visual style */
-  color: var(--color-accent);
-  border-bottom: 1px solid rgba(139, 0, 0, 0.1);
-  position: relative;
+  color: var(--color-text);
+  border-bottom: 1px solid rgba(139, 0, 0, 0.12);
 
-  /* Layout fix */
   display: block;
   width: 100%;
   clear: both;
@@ -133,17 +160,14 @@ h3 + ul {
 }
 
 h4 {
-  /* Font properties */
   font-family: var(--font-sans);
   font-size: 1.125rem;
   font-weight: 600;
   line-height: var(--baseline);
 
-  /* Spacing for vertical rhythm */
-  margin-top: calc(var(--baseline) * 1.5);
-  margin-bottom: calc(var(--baseline) / 2);
+  margin-top: var(--baseline);
+  margin-bottom: var(--half);
 
-  /* Visual style */
   color: var(--color-text);
   display: block;
   position: relative;
@@ -156,12 +180,13 @@ h3 + h4 {
   margin-top: var(--baseline);
 }
 
-/* Special styling for the "High level:" text that appears in your page */
+/* Special styling for the "High level:" text (if present) */
 h3 + p:first-of-type {
   font-family: var(--font-sans);
   font-weight: 500;
   font-size: 1rem;
-  margin-top: calc(var(--baseline) / 2);
+  line-height: var(--baseline);
+  margin-top: var(--half);
   margin-bottom: var(--baseline);
   color: var(--color-subtle);
   clear: both;
@@ -170,51 +195,32 @@ h3 + p:first-of-type {
 /* Ensure proper spacing when content follows an h4 */
 h4 + p,
 h4 + ul {
-  margin-top: calc(var(--baseline) / 3);
+  margin-top: var(--half);
 }
 
 /* Enhanced list spacing in portfolio sections */
 h3 + ul > li {
-  margin-bottom: calc(var(--baseline) / 2);
+  margin-bottom: var(--half);
 }
 
 /* Proper link styling in headings */
-h3 a, h4 a {
+h3 a,
+h4 a {
   color: inherit;
-  border-bottom: 1px dotted rgba(139, 0, 0, 0.3);
+  border-bottom: 1px dotted rgba(139, 0, 0, 0.35);
 }
 
-h3 a:hover, h4 a:hover {
+h3 a:hover,
+h4 a:hover {
   color: var(--color-link-hover);
   border-bottom: 1px solid var(--color-link-hover);
 }
 
-/* Audio element styling */
-audio {
-  display: block;
-  margin: var(--baseline) 0 calc(var(--baseline) * 1.5);
-  width: 100%;
-  max-width: 300px;
-}
-
-/* Fix for headings following audio elements */
-audio + h3,
-[id^="other"] {
-  clear: both;
-  margin-top: calc(var(--baseline) * 2);
-}
-
-/* Add clearfix utility */
-.clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
+/* Paragraphs */
 p {
   margin-bottom: var(--baseline);
-  hyphens: auto;
   line-height: var(--baseline);
+  hyphens: none; /* faster skim; avoids ugly hyphen runs */
 }
 
 p:last-child {
@@ -222,13 +228,20 @@ p:last-child {
 }
 
 strong {
-  font-weight: 700;
+  font-weight: 650; /* less shouty than 700; better hierarchy */
+}
+
+/* Make label-bolds (e.g., “System Ownership”) scan like micro-headings */
+p strong {
+  font-family: var(--font-sans);
+  letter-spacing: 0.01em;
 }
 
 em {
   font-style: italic;
 }
 
+/* Links */
 a {
   color: var(--color-link);
   text-decoration: none;
@@ -236,7 +249,14 @@ a {
   transition: color 0.2s, border-bottom-color 0.2s;
 }
 
-a:hover, a:focus {
+/* Persistent underline for body links: better skim affordance */
+main p a,
+main li a {
+  border-bottom-color: rgba(18, 18, 18, 0.25);
+}
+
+a:hover,
+a:focus {
   color: var(--color-link-hover);
   border-bottom-color: var(--color-link-hover);
 }
@@ -259,25 +279,26 @@ table {
 }
 
 table td {
-  padding: calc(var(--baseline) / 3);
+  padding: var(--half);
   text-align: center;
   border-bottom: none;
   font-weight: 600;
 }
 
-/* Styling for the top three cells (Titles) */
+/* Styling for the top row */
 table tr:first-child td {
   font-size: 1.1rem;
   letter-spacing: 0.01em;
 }
 
 /* Lists */
-ul, ol {
-  margin: var(--baseline) 0 var(--baseline) 1.5rem;
+ul,
+ol {
+  margin: var(--baseline) 0 var(--baseline) 1.5rem; /* vertical on-grid */
 }
 
 li {
-  margin-bottom: calc(var(--baseline) / 2);
+  margin-bottom: var(--half);
   line-height: var(--baseline);
   clear: both;
 }
@@ -286,8 +307,9 @@ li:last-child {
   margin-bottom: 0;
 }
 
-li ul, li ol {
-  margin-top: calc(var(--baseline) / 3);
+li ul,
+li ol {
+  margin-top: var(--half);
   margin-bottom: 0;
 }
 
@@ -296,7 +318,7 @@ li strong {
   font-family: var(--font-sans);
   font-size: 1.1rem;
   display: block;
-  margin-bottom: 0.5rem;
+  margin-bottom: var(--half);
   color: var(--color-text);
 }
 
@@ -318,7 +340,8 @@ li strong {
   text-align: center;
   transition: border-color 0.3s;
   min-height: calc(var(--baseline) * 3);
-  margin-bottom: var(--baseline);
+  margin-bottom: 0; /* grid handles spacing */
+  position: relative;
 }
 
 #connect + ul li:hover {
@@ -333,7 +356,7 @@ li strong {
   color: var(--color-link);
   border-bottom: none;
   display: block;
-  margin-bottom: 0.5rem;
+  margin-bottom: var(--half);
   position: relative;
 }
 
@@ -343,7 +366,7 @@ li strong {
 
 /* Underline animation for links */
 #connect + ul li a::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 0;
   height: 2px;
@@ -363,7 +386,7 @@ li strong {
   content: "💼";
   display: block;
   font-size: 2rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: var(--half);
   transition: transform 0.2s ease;
 }
 
@@ -371,7 +394,7 @@ li strong {
   content: ">_";
   display: block;
   font-size: 2rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: var(--half);
   transition: transform 0.2s ease;
 }
 
@@ -379,7 +402,7 @@ li strong {
   content: "✉️";
   display: block;
   font-size: 2rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: var(--half);
   transition: transform 0.2s ease;
 }
 
@@ -387,7 +410,7 @@ li strong {
   content: "🇨🇳";
   display: block;
   font-size: 2rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: var(--half);
   transition: transform 0.2s ease;
 }
 
@@ -395,23 +418,18 @@ li strong {
   transform: scale(1.2);
 }
 
-/* Style for the description text */
-#connect + ul li {
-  position: relative;
-}
-
 /* Format any text directly inside the li but after the link */
 #connect + ul li > :not(a) {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   color: var(--color-subtle);
   display: block;
-  margin-top: 0.25rem;
+  margin-top: var(--half);
   font-family: var(--font-sans);
-  line-height: 1.2;
-  padding: 0 0.5rem;
+  line-height: var(--baseline);
+  padding: 0 var(--half);
 }
 
-/* Fix for the last item that's not a link but text */
+/* Fix for the last item that's not a link but text (if present) */
 #connect + ul li:last-child {
   display: flex;
   flex-direction: column;
@@ -419,92 +437,37 @@ li strong {
   justify-content: center;
 }
 
-#connect + ul li:last-child::before {
-  content: "🇨🇳";
-  display: block;
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
-}
-
-/* About Me and Projects sections */
-h2 {
-  position: relative;
-  padding-left: calc(var(--baseline) / 2);
-  margin-top: calc(var(--baseline) * 3);
-}
-
-h2::before, #projects-and-contributions::before {
-  content: "";
-  position: absolute;
-  left: -0.25rem;
-  top: 0;
-  bottom: 0;
-  width: 0.25rem;
-  background-color: var(--color-accent);
-  opacity: 0.2;
-}
-
-/* Styling for Highlights/Achievements section */
-#highlightsachievements {
-  position: relative;
-  padding-left: calc(var(--baseline) / 2);
-  margin-top: calc(var(--baseline) * 3);
-}
-
-#highlightsachievements::before {
-  content: "";
-  position: absolute;
-  left: -0.25rem;
-  top: 0;
-  bottom: 0;
-  width: 0.25rem;
-  background-color: var(--color-accent);
-  opacity: 0.2;
-}
-
-/* Projects section styling */
-#projects-and-contributions + ul > li {
-  margin-bottom: calc(var(--baseline) * 1.5);
-  padding-bottom: var(--baseline);
-  border-bottom: 1px solid rgba(0,0,0,0.05);
-}
-
-#projects-and-contributions + ul > li:last-child {
-  border-bottom: none;
-}
-
-#projects-and-contributions + ul > li > strong {
-  display: block;
-  font-size: 1.2rem;
-  margin-bottom: calc(var(--baseline) / 2);
-  font-family: var(--font-sans);
-}
-
 /* Additional header/intro styling */
 header + main > p:first-of-type {
   font-size: 1.2rem;
-  line-height: 1.8;
-  margin: calc(var(--baseline) * 1.5) 0 calc(var(--baseline) * 2);
+  line-height: calc(var(--baseline) * 1); /* keep on grid */
+  margin: calc(var(--baseline) * 1.5) auto calc(var(--baseline) * 2);
   text-align: center;
   max-width: 36rem;
-  margin-left: auto;
-  margin-right: auto;
+  letter-spacing: 0.01em; /* slightly more “lead paragraph” polish */
 }
 
-/* Make the Domain Name Note special
+/* Audio element styling */
+audio {
+  display: block;
+  margin: var(--baseline) 0;
+  width: 100%;
+  max-width: 100%;
+}
 
-I really like this, but I'm disabling for now.
-
-main > p:last-of-type {
+/* Fix for headings following audio elements */
+audio + h3,
+[id^="other"] {
+  clear: both;
   margin-top: calc(var(--baseline) * 2);
-  padding: var(--baseline);
-  background-color: rgba(0,0,0,0.03);
-  border-radius: 4px;
-  font-family: var(--font-mono);
-  text-align: center;
-  font-size: 0.9rem;
 }
-*/
+
+/* Add clearfix utility */
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 /* Footer */
 footer {
@@ -512,45 +475,28 @@ footer {
   padding-top: var(--baseline);
   border-top: 1px solid #ddd;
   text-align: center;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
+  line-height: var(--baseline);
   color: var(--color-subtle);
 }
 
-/* Media queries for responsiveness */
-@media (max-width: 768px) {
-  :root {
-    --text-base-size: 1.05rem;
-    --max-width: 100%;
-  }
-
-  body {
-    padding: 1.5rem 1rem;
-  }
-
-  header h1 {
-    font-size: 2rem;
-  }
-
-  #connect + ul {
-    grid-template-columns: 1fr;
-  }
-
-  /* Adjust h3 indicator for mobile */
-  h3::before {
-    left: -0.75rem;
-    width: 0.4rem;
-    height: 0.4rem;
-  }
-
-  /* Adjust h4 indicator for mobile */
-  h4::before {
-    left: -1rem;
-  }
+/* Responsive image styling */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: var(--baseline) 0; /* on grid */
 }
 
-@media (min-width: 769px) and (max-width: 1024px) {
-  :root {
-    --max-width: 36rem;
+main img {
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* If you want a specific max-width for images that matches content width */
+@media (min-width: 768px) {
+  main img {
+    max-width: min(100%, 700px);
   }
 }
 
@@ -560,6 +506,7 @@ footer {
     font-size: 11pt;
     max-width: 100%;
     padding: 0;
+    line-height: 14pt;
   }
 
   a {
@@ -574,17 +521,45 @@ footer {
   #connect + ul li {
     box-shadow: none;
     border: 1px solid #ddd;
-    margin-bottom: 0.5rem;
-    padding: 0.5rem;
+    margin-bottom: var(--half);
+    padding: var(--half);
   }
 
   /* Simplify h3 and h4 styles for print */
-  h3::before, h4::before {
+  h3::before,
+  h4::before {
     display: none;
   }
 
   h3 {
     border-bottom: 1px solid #000;
+  }
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  :root {
+    --text-base-size: 1.05rem;
+    --max-width: 100%;
+  }
+
+  body {
+    padding: var(--baseline) 1rem;
+  }
+
+  header h1 {
+    font-size: 2rem;
+    line-height: calc(var(--baseline) * 2);
+  }
+
+  #connect + ul {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  main {
+    max-width: 36rem;
   }
 }
 
@@ -603,7 +578,7 @@ footer {
   background: repeating-linear-gradient(
     to bottom,
     rgba(0, 0, 255, 0.1),
-    rgba(0, 0, 255, 0.1) 1px,
+    rgba(0,  0, 255, 0.1) 1px,
     transparent 1px,
     transparent var(--baseline)
   );
@@ -611,49 +586,3 @@ footer {
   z-index: 1000;
 }
 
-/* Responsive image styling */
-img {
-  max-width: 100%; /* Ensures image doesn't exceed container width */
-  height: auto; /* Maintains aspect ratio */
-  display: block; /* Removes bottom margin/spacing that can occur with inline images */
-  margin: 1.5rem 0; /* Adds some vertical spacing that aligns with typography */
-}
-
-/* For images that need special treatment, like the Waffle GIF */
-main img {
-  border-radius: 4px; /* Optional: adds slight rounding to images */
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Optional: adds subtle shadow */
-}
-
-/* Ensure images in articles/sections align with text width */
-main p img,
-main li img,
-main h2 + img,
-main h3 + img,
-main h4 + img {
-  max-width: 100%;
-  width: auto;
-}
-
-/* If you want a specific max-width for images that matches content width */
-@media (min-width: 768px) {
-  main img {
-    max-width: min(100%, 700px); /* Adjust 700px to match your content width */
-  }
-}
-
-/* If you want images to maintain specific aspect ratios related to your line height */
-main img[src$=".gif"],
-main img[src*="portfolio"] {
-  /* This maintains aspect ratio while ensuring height is divisible by your line height */
-  /* Assuming a base line height of 1.5rem (24px at 16px base font) */
-  object-fit: cover;
-  height: auto;
-}
-
-/* Audio controls responsive styling to match image constraints */
-audio {
-  width: 100%;
-  max-width: 100%;
-  margin: 1.5rem 0;
-}
