@@ -16,13 +16,13 @@ Haskell. Python. Infrastructure. Reliability.
 
 ## Select Works
 
-**Waffle:** [Code](https://github.com/someodd/waffle) | [Post](https://www.someodd.zip/phlog/waffle.gopher) 
+**Waffle:** [Code](https://github.com/someodd/waffle) | [Post](https://www.someodd.zip/phlog/waffle.gopher)
 Client application engineering focused on protocols, memory profiling, and correctness.
 
-**Whisper Radio:** [Live Station](https://radio.someodd.zip) | [Code](https://github.com/someodd/whisper-radio) | [Post](https://www.someodd.zip/phlog/whisper-radio.gopher)  
+**Whisper Radio:** [Live Station](https://radio.someodd.zip) | [Code](https://github.com/someodd/whisper-radio) | [Post](https://www.someodd.zip/phlog/whisper-radio.gopher)
 AI-driven live audio system integrating LLM-generated responses, voice cloning, and automated sound design. Simulates themed broadcast environments (e.g., Antarctic field station) with real-time orchestration and deployment workflows.
 
-**Haskellcard:** [Code](https://github.com/someodd/haskellcard) | [Post](https://www.someodd.zip/phlog/haskellcard.gopher) 
+**Haskellcard:** [Code](https://github.com/someodd/haskellcard) | [Post](https://www.someodd.zip/phlog/haskellcard.gopher)
 A Haskell game engine emphasizing deterministic state and functional systems design.
 
 ### Want more?
