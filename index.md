@@ -14,30 +14,22 @@ Haskell. Python. Infrastructure. Reliability.
 - [US-China Relations](https://chinawest.consulting)
 - [Technical work](https://www.someodd.zip)
 
-## Competencies
-
-**System Ownership** End-to-end architecture of long-running production systems. Operability, cost, and longevity are not afterthoughts; they are the product.
-
-**Engineering Leadership** Leading small, high-output teams with calm momentum. I favor practical, security-minded engineering over loud, complex abstractions.
-
-**Cross-Cultural Operations** Specialized technical and consulting work bridging China and the US.
-
 ## Select Works
 
 **Waffle:** [Code](https://github.com/someodd/waffle) | [Post](https://www.someodd.zip/phlog/waffle.gopher) 
 Client application engineering focused on protocols, memory profiling, and correctness.
 
-**Whisper Radio:** [Live Station](https://radio.someodd.zip) | [Code](https://github.com/someodd/whisper-radio) | [Post](https://www.someodd.zip/phlog/whisper-radio.gopher) 
-A bot-controlled audio stream exploring automated curation.
+**Whisper Radio:** [Live Station](https://radio.someodd.zip) | [Code](https://github.com/someodd/whisper-radio) | [Post](https://www.someodd.zip/phlog/whisper-radio.gopher)  
+AI-driven live audio system integrating LLM-generated responses, voice cloning, and automated sound design. Simulates themed broadcast environments (e.g., Antarctic field station) with real-time orchestration and deployment workflows.
 
 **Haskellcard:** [Code](https://github.com/someodd/haskellcard) | [Post](https://www.someodd.zip/phlog/haskellcard.gopher) 
 A Haskell game engine emphasizing deterministic state and functional systems design.
 
-## The Laboratory (someodd.zip)
+### Want more?
 
-My experimental work happens at **[someodd.zip](http://www.someodd.zip/)**.
-
-That is where I keep personal systems, Gopher servers, and automation projects. It is a space for raw engineering and keeping my hands warm. It leaks into how I ship: reliable, simple, and understood.
+* [More about my software](https://www.someodd.zip/tags/my_warez) - which includes formally verified search algorithms and other goodies!
+* [More about my services](https://www.someodd.zip/tags/my_servs) - I love hosting my own services on a server I run in-house!
+* [Current open source work](https://github.com/someodd)
 
 ## Community
 
